@@ -38,24 +38,19 @@ fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/liu-ru-yan/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/jiao/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/liu-ru-yan/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/liu-ru-yan/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/jiao/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/jiao/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/liu-ru-yan/miniconda3/bin:$PATH"
+        export PATH="/home/jiao/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-
-
-
-
-
-
-
-
+export CROSS_COMPILE=riscv64-linux-gnu-
+export t=ultralytics/ultralytics:latest
+export CVAT_HOST=127.0.0.1
