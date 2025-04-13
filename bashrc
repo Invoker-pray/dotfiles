@@ -1,1 +1,0 @@
-/home/jiao/dotfiles/.config/bashrc

@@ -22,7 +22,7 @@
 # -----------------------------------------------------
 
 for f in ~/.config/bashrc/*; do 
-    if [ ! -d $f ] ;then
+    if [ ! -d $f ]; then
         c=`echo $f | sed -e "s=.config/bashrc=.config/bashrc/custom="`
         [[ -f $c ]] && source $c || source $f
     fi
@@ -32,9 +32,21 @@ done
 # Load single customization file (if exists)
 # -----------------------------------------------------
 
-if [ -f ~/.bashrc_custom ] ;then
+if [ -f ~/.bashrc_custom ]; then
     source ~/.bashrc_custom
 fi
+
+export t=ultralytics/ultralytics:latest
+export CVAT_HOST=127.0.0.1
+#export v=ghcr.io/chipsalliance/t1-blastoise-t1emu:latest
+#export F4PGA_INSTALL_DIR=~/opt/f4pga
+#export FPGA_FAM=xc7
+#export F4PGA_PACKAGES='install-xc7 xc7a50t_test xc7a100t_test xc7a200t_test xc7z010_test'
+
+export http_proxy="http://127.0.0.1:7897"
+export https_proxy="http://127.0.0.1:7897"
+export ftp_proxy="http://127.0.0.1:7897"
+export no_proxy="localhost,127.0.0.1"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -51,6 +63,3 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export CROSS_COMPILE=riscv64-linux-gnu-
-export t=ultralytics/ultralytics:latest
-export CVAT_HOST=127.0.0.1
