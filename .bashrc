@@ -43,6 +43,7 @@ export CVAT_HOST=127.0.0.1
 #export FPGA_FAM=xc7
 #export F4PGA_PACKAGES='install-xc7 xc7a50t_test xc7a100t_test xc7a200t_test xc7z010_test'
 
+export JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=7897 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7897"
 export http_proxy="http://127.0.0.1:7897"
 export https_proxy="http://127.0.0.1:7897"
 export ftp_proxy="http://127.0.0.1:7897"
@@ -63,3 +64,14 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+
+source ~/python-venv/bin/activate
+
+
+# ~/.zshrc
+if ! pgrep -f "ollama serve" > /dev/null; then
+  ollama serve & disown
+fi
+export PATH=/opt/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
