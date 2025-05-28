@@ -16,6 +16,7 @@ cuda
 debootstrap
 devtools
 docker
+docker-compose
 docker-credential-pass
 dolphin
 efibootmgr
@@ -37,11 +38,13 @@ flatpak
 fuse2
 fzf
 git
+git-lfs
 glib2-devel
 gnome-calculator
 gnome-system-monitor
 gnome-text-editor
 go
+google-chrome
 grimblast-git
 grub
 gst-libav
@@ -71,12 +74,11 @@ intel-ucode
 inxi
 iverilog
 iwd
-jdk-openjdk
-jdk17-openjdk
 kate
 konsole
 libpulse
 libreoffice-fresh
+libsecp256k1
 libva-intel-driver
 libva-utils
 libva-vdpau-driver
@@ -90,8 +92,6 @@ lsd
 matugen-bin
 mercurial
 minicom
-ml4w-hyprland-git
-mmdebstrap
 mousepad
 mpc
 mpv-mpris
@@ -99,7 +99,6 @@ nano
 nautilus
 nautilus-open-any-terminal
 ncurses5-compat-libs
-ncurses5-compat-libs-debug
 neofetch
 neovim
 network-manager-applet
@@ -109,6 +108,7 @@ noto-fonts-cjk
 noto-fonts-extra
 nvidia
 nvidia-container-toolkit
+nvidia-settings
 nvidia-utils
 nvtop
 nwg-displays
@@ -116,6 +116,7 @@ nwg-dock-hyprland
 nwg-look
 oh-my-posh-bin
 okular
+ollama
 onnx
 onnxruntime
 openfpgaloader
