@@ -6,6 +6,7 @@ base
 base-devel
 bibata-cursor-theme-bin
 blueman
+breeze-plymouth
 btop
 cava
 checkupdates-with-aur
@@ -13,6 +14,7 @@ chisel
 clash-verge-rev-bin
 clipse
 cuda
+cudnn
 debootstrap
 devtools
 docker
@@ -35,6 +37,7 @@ filezilla
 firefox
 flameshot
 flatpak
+flatpak-kcm
 fuse2
 fzf
 git
@@ -45,6 +48,7 @@ gnome-system-monitor
 gnome-text-editor
 go
 google-chrome
+graphviz
 grimblast-git
 grub
 gst-libav
@@ -76,6 +80,7 @@ iverilog
 iwd
 kate
 konsole
+kwin-x11
 libpulse
 libreoffice-fresh
 libsecp256k1
@@ -87,6 +92,7 @@ linux-firmware
 linux-headers
 linux-lts
 linuxqq-appimage
+listen1-desktop
 loupe
 lsd
 matugen-bin
@@ -98,6 +104,7 @@ mpv-mpris
 nano
 nautilus
 nautilus-open-any-terminal
+nccl
 ncurses5-compat-libs
 neofetch
 neovim
@@ -132,7 +139,9 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 plasma-meta
+plasma-sdk
 plasma-workspace
+plymouth-kcm
 pokemon-colorscripts-git
 polkit-gnome
 power-profiles-daemon
@@ -188,6 +197,7 @@ vim
 vivaldi
 vtk
 vulkan-intel
+vulkan-mesa-layers
 vulkan-nouveau
 vulkan-radeon
 wallust
