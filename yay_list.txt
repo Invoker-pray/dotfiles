@@ -92,7 +92,6 @@ linux-firmware
 linux-headers
 linux-lts
 linuxqq-appimage
-listen1-desktop
 loupe
 lsd
 matugen-bin
