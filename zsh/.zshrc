@@ -46,11 +46,15 @@ export CVAT_HOST=127.0.0.1
 #export FPGA_FAM=xc7
 #export F4PGA_PACKAGES='install-xc7 xc7a50t_test xc7a100t_test xc7a200t_test xc7z010_test'
 
+
+
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
+export PATH=$JAVA_HOME/bin:$PATH
 export JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=7897 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7897"
 export http_proxy="http://127.0.0.1:7897"
 export https_proxy="http://127.0.0.1:7897"
-export ftp_proxy="http://127.0.0.1:7897"
-export no_proxy="localhost,127.0.0.1"
+#export ftp_proxy="http://127.0.0.1:7897"
+#export no_proxy="localhost,127.0.0.1"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -69,14 +73,29 @@ unset __conda_setup
 
 
 
-source ~/python-venv/bin/activate
+#source ~/python-venv/bin/activate
 
 
 # ~/.zshrc
 if ! pgrep -f "ollama serve" > /dev/null; then
   ollama serve & disown
 fi
+
+
 export PATH=/opt/cuda/bin:$PATH
 export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
 
 export PATH="$HOME/.cargo/bin:$PATH"
+export XILINX_VITIS=~/xilinx/Vitis/2024.2/
+
+
+
+
+
+# synopsys
+
+export PATH=$PATH:~/synopsys/vcs-mx/O-2018.09-SP2/bin/
+export PATH=$PATH:~/synopsys/verdi/Verdi_O-2018.09-SP2/bin/
+export PATH=$PATH:~/synopsys/scl/2018.06/linux64/bin/
+export LD_LIBRARY_PATH=$PATH:~/synopsys/
+
