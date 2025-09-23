@@ -374,7 +374,7 @@ virtualbox-guest-iso
 wacomtablet
 wallust
 waybar
-wechat
+wechat-appimage
 wget
 wlogout
 xarchiver
