@@ -92,10 +92,25 @@ export XILINX_VITIS=~/xilinx/Vitis/2024.2/
 
 
 
-# synopsys
+# Synopsys
 
-export PATH=$PATH:~/synopsys/vcs-mx/O-2018.09-SP2/bin/
-export PATH=$PATH:~/synopsys/verdi/Verdi_O-2018.09-SP2/bin/
-export PATH=$PATH:~/synopsys/scl/2018.06/linux64/bin/
-export LD_LIBRARY_PATH=$PATH:~/synopsys/
+export SNPSLMD_LICENSE_FILE=27000@archlinux
+
+#vcs
+export VCS_HOME=/home/jiao/synopsys/vcs-mx/O-2018.09-SP2/
+export PATH=$PATH:$VCS_HOME/bin
+
+#verdi
+export LD_LIBRARY_PATH=/home/jiao/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/linux64
+export VERDI_HOME=/home/jiao/synopsys/verdi/Verdi_O-2018.09-SP2/
+export PATH=$PATH:$VERDI_HOME/bin
+#scl
+export SCL_HOME=/home/jiao/synopsys/scl/2018.06/
+export PATH=$PATH:$SCL_HOME/linux64/bin
+export VCS_ARCH_OVERRIDE=linux
+
+#LICENCE
+export LM_LICENSE_FILE=/home/jiao/synopsys/scl/2018.06/admin/license/Synopsys.dat
+alias lmg="lmgrd -c /home/jiao/synopsys/scl/2018.06/admin/license/Synopsys.dat"
+
 

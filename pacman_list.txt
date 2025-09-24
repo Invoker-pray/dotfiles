@@ -5,6 +5,7 @@ akonadi-import-wizard
 akonadiconsole
 akregator
 alligator
+amd-ucode
 angelfish
 arianna
 ark
@@ -243,6 +244,7 @@ lib32-zlib
 libkscreen
 libksysguard
 libplasma
+libpng12
 libreoffice-fresh
 libspng
 libva-nvidia-driver
@@ -256,6 +258,7 @@ lokalize
 loupe
 lsd
 lskat
+lsof
 magic
 marble
 markdownpart
@@ -353,6 +356,7 @@ systemsettings
 telly-skout
 thunar-archive-plugin
 thunar-volman
+time
 tokodon
 ttf-droid
 ttf-fantasque-nerd
@@ -362,7 +366,6 @@ ttf-jetbrains-mono-nerd
 ttf-victor-mono
 tumbler
 typescript
-ufw
 umbrello
 umockdev
 unrar
