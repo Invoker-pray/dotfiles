@@ -1,3 +1,4 @@
+7zip
 accessibility-inspector
 adobe-source-code-pro-fonts
 akonadi-calendar-tools
@@ -14,6 +15,7 @@ audex
 audiocd-kio
 audiotube
 aurorae
+baidunetdisk-bin
 base
 base-devel
 bc
@@ -31,12 +33,13 @@ btop
 calligra
 cantor
 cava
-clash-verge-bin
+clash-verge-rev-bin
 cliphist
 cmake
 code
 colord-kde
 cuda
+cuda-tools
 discover
 docker
 docker-compose
@@ -289,6 +292,7 @@ nwg-look
 ocean-sound-theme
 okular
 ollama
+open-vm-tools
 openssh
 otf-font-awesome
 oxygen
@@ -356,10 +360,12 @@ swaync
 sweeper
 swww
 systemsettings
+telegram-desktop-bin
 telly-skout
 thunar-archive-plugin
 thunar-volman
 time
+timeshift
 tokodon
 tree
 ttf-droid
@@ -439,7 +445,6 @@ xorg-xwud
 yad
 yakuake
 yay
-yay-debug
 yosys
 zanshin
 zip
