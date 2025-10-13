@@ -88,9 +88,14 @@ export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 export XILINX_VITIS=~/xilinx/Vitis/2024.2/
 
+export PATH=$PATH:~/nsight-systems-2025.5.1/bin/
 
 
 
+
+## loginctl
+
+alias zzz="loginctl lock-session"
 
 ## Synopsys
 #
