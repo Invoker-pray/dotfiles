@@ -1,0 +1,1 @@
+sudo pacman -S linux linux-lts linux-headers linux-lts-headers && sudo pacman -S nvidia nvidia-utils nvidia-lts && sudo mkinitcpio -P && sudo grub-mkconfig -o /boot/grub/grub.cfg && sudo journalctl --vacuum-time=3d

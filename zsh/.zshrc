@@ -97,6 +97,11 @@ export PATH=$PATH:~/nsight-systems-2025.5.1/bin/
 
 alias zzz="loginctl lock-session"
 
+
+
+## rust analyzer
+
+export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
 ## Synopsys
 #
 export SNPSLMD_LICENSE_FILE=27000@archlinux
@@ -164,4 +169,10 @@ export VCS_ARCH_OVERRIDE=linux64
 #LICENCE
 export LM_LICENSE_FILE=/home/jiao/synopsys2024/scl/2024.06/admin/license/Synopsys.dat
 alias lmg="lmgrd -c /home/jiao/synopsys2024/scl/2024.06/admin/license/Synopsys.dat"
+
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/jiao/.dart-cli-completion/zsh-config.zsh ]] && . /home/jiao/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
 
