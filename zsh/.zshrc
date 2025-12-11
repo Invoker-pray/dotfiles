@@ -176,3 +176,4 @@ alias lmg="lmgrd -c /home/jiao/synopsys2024/scl/2024.06/admin/license/Synopsys.d
 [[ -f /home/jiao/.dart-cli-completion/zsh-config.zsh ]] && . /home/jiao/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
+export M5_PATH=/home/jiao/git/work1/exp6/gem5-salam/

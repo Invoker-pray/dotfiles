@@ -45,7 +45,6 @@ code
 colord-kde
 cpio
 cuda
-cuda-tools
 darktable
 decibels
 discover
@@ -74,6 +73,7 @@ ffmpegthumbs
 filelight
 firefox
 flatpak-kcm
+flclash-bin
 francis
 fzf
 gdm
@@ -313,6 +313,7 @@ linux-headers
 linux-lts
 linux-lts-headers
 linuxqq
+lldb
 lokalize
 loupe
 lsd
@@ -331,6 +332,7 @@ minicom
 minuet
 mousepad
 mpv-mpris
+multilib-devel
 nano
 nautilus
 neochat
@@ -532,6 +534,7 @@ xorg-xwininfo
 xorg-xwud
 yad
 yakuake
+yandex-browser
 yay
 yelp
 yosys
