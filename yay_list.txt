@@ -474,6 +474,7 @@ wacomtablet
 wallust
 waybar
 wechat-appimage
+wemeet-bin
 wget
 wireshark-qt
 wlogout
