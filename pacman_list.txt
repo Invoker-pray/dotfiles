@@ -346,9 +346,9 @@ nix
 nmap
 nodejs-lts-iron
 npm
-nvidia
 nvidia-container-toolkit
-nvidia-lts
+nvidia-open
+nvidia-open-lts
 nvidia-settings
 nvtop
 nwg-displays
@@ -410,6 +410,7 @@ qqc2-breeze-style
 qrca
 qt5ct
 qt6ct
+retroarch
 rocs
 rofi
 rust-analyzer

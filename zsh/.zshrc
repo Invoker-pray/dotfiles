@@ -102,78 +102,13 @@ alias zzz="loginctl lock-session"
 ## rust analyzer
 
 export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
-## Synopsys
-#
-export SNPSLMD_LICENSE_FILE=27000@archlinux
-
-#vcs
-export VCS_HOME=/home/jiao/synopsys/vcs-mx/O-2018.09-SP2/
-export PATH=$PATH:$VCS_HOME/bin
-export LD_LIBRARY_PATH=$VCS_HOME/linux64/lib:$LD_LIBRARY_PATH
-export VCS_ARCH_OVERRIDE=linux
-export VCS_NO_LINUX_CHECK=1
-
-
-
-#verdi
-export LD_LIBRARY_PATH=/home/jiao/synopsys/verdi/Verdi_O-2018.09-SP2/share/PLI/VCS/linux64
-export VERDI_HOME=/home/jiao/synopsys/verdi/Verdi_O-2018.09-SP2/
-export PATH=$PATH:$VERDI_HOME/bin
-##scl
-#export SCL_HOME=/home/jiao/synopsys/scl/2018.06/
-#export PATH=$PATH:$SCL_HOME/linux64/bin
-#export VCS_ARCH_OVERRIDE=linux
-#
-##LICENCE
-#export LM_LICENSE_FILE=/home/jiao/synopsys/scl/2018.06/admin/license/Synopsys.dat
-#alias lmg="lmgrd -c /home/jiao/synopsys/scl/2018.06/admin/license/Synopsys.dat"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Synopsys
-#
-#export SNPSLMD_LICENSE_FILE=27000@archlinux
-#
-#vcs
-#export VCS_HOME=/home/jiao/synopsys2024/vcs/W-2024.09-SP1/
-#export PATH=$PATH:$VCS_HOME/bin
-##
-##verdi
-#export LD_LIBRARY_PATH=/home/jiao/synopsys2024/verdi/W-2024.09-SP1/share/PLI/VCS/linux64/
-#export VERDI_HOME=/home/jiao/synopsys2024/verdi/W-2024.09-SP1/
-#export PATH=$PATH:$VERDI_HOME/bin
-#scl
-export SCL_HOME=/home/jiao/synopsys2024/scl/2024.06/
-export PATH=$PATH:$SCL_HOME/linux64/bin
-export VCS_ARCH_OVERRIDE=linux64
-
-#LICENCE
-export LM_LICENSE_FILE=/home/jiao/synopsys2024/scl/2024.06/admin/license/Synopsys.dat
-alias lmg="lmgrd -c /home/jiao/synopsys2024/scl/2024.06/admin/license/Synopsys.dat"
-
 
 ## [Completion]
 ## Completion scripts setup. Remove the following line to uninstall
 [[ -f /home/jiao/.dart-cli-completion/zsh-config.zsh ]] && . /home/jiao/.dart-cli-completion/zsh-config.zsh || true
 ## [/Completion]
 
-export M5_PATH=/home/jiao/git/work1/exp6/gem5-salam/
+# my uvm 
+export UVM_HOME=/home/jiao/.config/uvm-core-2020.3.1/
+
+
