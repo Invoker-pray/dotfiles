@@ -112,3 +112,8 @@ export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
 export UVM_HOME=/home/jiao/.config/uvm-core-2020.3.1/
 
 
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/home/jiao/.lmstudio/bin"
+# End of LM Studio CLI section
+
