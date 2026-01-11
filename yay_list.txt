@@ -1,6 +1,7 @@
 7zip
 accessibility-inspector
 adobe-source-code-pro-fonts
+adobe-source-han-serif-cn-fonts
 aircrack-ng
 akonadi-calendar-tools
 akonadi-import-wizard
@@ -138,6 +139,7 @@ hyprland
 hyprlock
 hyprpolkitagent
 inetutils
+inkscape
 intel-ucode
 inxi
 iptables
@@ -372,6 +374,7 @@ papers
 parley
 partitionmanager
 pavucontrol
+perl-file-which
 picmi
 pim-data-exporter
 pim-sieve-editor
@@ -445,6 +448,9 @@ systemsettings
 tecla
 telegram-desktop-bin
 telly-skout
+texlive-fontsrecommended
+texlive-langchinese
+texlive-xetex
 thunar-archive-plugin
 thunar-volman
 time
@@ -542,6 +548,8 @@ yay
 yelp
 yosys
 zanshin
+zathura
+zathura-pdf-mupdf
 zip
 zsh
 zsh-completions
