@@ -351,8 +351,7 @@ nmap
 nodejs-lts-iron
 npm
 nvidia-container-toolkit
-nvidia-open
-nvidia-open-lts
+nvidia-open-dkms
 nvidia-settings
 nvtop
 nwg-displays

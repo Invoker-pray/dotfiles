@@ -117,3 +117,10 @@ export UVM_HOME=/home/jiao/.config/uvm-core-2020.3.1/
 export PATH="$PATH:/home/jiao/.lmstudio/bin"
 # End of LM Studio CLI section
 
+
+#vivado
+export PATH="$PATH:/home/jiao/xilinx/Vivado/2024.2/bin"
+#vitis
+export PATH="$PATH:/home/jiao/xilinx/Vitis/2024.2/bin"
+#vitis_hls
+export PATH="$PATH:/home/jiao/xilinx/Vitis_HLS/2024.2/bin"
