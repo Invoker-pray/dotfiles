@@ -1,1 +1,4 @@
-recommand to use `https://github.com/mylinuxforwork/dotfiles`  
+adapted from:
+
+https://github.com/JaKooLit/Arch-Hyprland
+https://github.com/ayamir/nvimdots

@@ -14,3 +14,6 @@ cp -r ~/.config/hypr .
 
 #kitty
 cp -r ~/.config/kitty .
+
+#neovim
+cp -r ~/.config/nvim .
