@@ -63,6 +63,7 @@ drkonqi
 efibootmgr
 elisa
 epiphany
+ex-vi-compat
 falkon
 fastfetch
 fcitx5
@@ -356,6 +357,7 @@ nvidia-settings
 nvtop
 nwg-displays
 nwg-look
+obs-studio
 ocean-sound-theme
 okular
 ollama
@@ -473,7 +475,6 @@ unrar
 unzip
 usbutils
 verilator
-vi
 virt-manager
 virtualbox
 virtualbox-guest-iso
