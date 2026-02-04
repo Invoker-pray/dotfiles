@@ -37,6 +37,7 @@ breeze-gtk
 breeze-plymouth
 brightnessctl
 btop
+burpsuite
 calligra
 cantor
 cava
@@ -332,6 +333,7 @@ massif-visualizer
 mbox-importer
 mercurial
 merkuro
+metasploit
 milou
 minicom
 minuet
@@ -447,6 +449,7 @@ swaync
 sweeper
 swww
 systemsettings
+tcpdump
 tecla
 telegram-desktop-bin
 telly-skout
@@ -550,6 +553,7 @@ yay
 yelp
 yosys
 zanshin
+zaproxy
 zathura
 zathura-pdf-mupdf
 zip
