@@ -457,6 +457,7 @@ texlive-bibtexextra
 texlive-fontsrecommended
 texlive-langchinese
 texlive-xetex
+thorium-reader
 thunar-archive-plugin
 thunar-volman
 time
