@@ -34,6 +34,7 @@ cp -r ~/.config/kitty config.
 
 #neovim
 cp -r ~/.config/nvim config.
+rm -rf config./nvim/.git
 
 #waybar
 cp -r ~/.config/waybar config.
