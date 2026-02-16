@@ -42,7 +42,6 @@ ffmpegthumbnailer
 ffmpegthumbs
 firefox
 flclash-bin
-foliate
 fzf
 ghostwriter
 git
@@ -70,10 +69,12 @@ iverilog
 john
 jq
 kcachegrind
+kimageformats
 kio-admin
 kitty
 klayout
 kompare
+koreader-bin
 kpipewire
 ksshaskpass
 kwallet-pam
@@ -147,6 +148,7 @@ qalculate-gtk
 qbittorrent
 qemu-full
 qt5ct
+qt6-wayland
 qt6ct
 retroarch
 rofi
