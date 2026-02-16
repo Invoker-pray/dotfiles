@@ -89,3 +89,6 @@ cp -r ~/.local/share/qutebrowser local./share
 
 #systemd
 cp -r ~/.config/systemd config.
+
+#zatura
+cp -r ~/.config/zathura config.

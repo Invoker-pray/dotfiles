@@ -74,7 +74,6 @@ kio-admin
 kitty
 klayout
 kompare
-koreader-bin
 kpipewire
 ksshaskpass
 kwallet-pam
@@ -171,6 +170,7 @@ texlive-bibtexextra
 texlive-fontsrecommended
 texlive-langchinese
 texlive-xetex
+thorium-reader
 thunar-archive-plugin
 thunar-volman
 time
