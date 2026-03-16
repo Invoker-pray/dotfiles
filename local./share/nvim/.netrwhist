@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/jiao/myblog/source/_posts/large-models-from-here'
+let g:netrw_dirhist_7='/home/jiao/git/mn/milestone'
+let g:netrw_dirhist_6='/home/jiao/shared/FPGA_A/scripts'
+let g:netrw_dirhist_5='/home/jiao/shared/FPGA_ultra_mini_fc2/hw/rtl/core'
+let g:netrw_dirhist_4='/home/jiao/shared/FPGA_ultra_mini_fc2/hw'
+let g:netrw_dirhist_3='/home/jiao/shared/FPGA_ultra_mini_fc2'
+let g:netrw_dirhist_2='/home/jiao/code/cuda-tutorial/1'
+let g:netrw_dirhist_1='/home/jiao/code/cuda-tutorial'
+let g:netrw_dirhist_0='/home/jiao/code/cuda-tutorial/2'
+let g:netrw_dirhist_9='/home/jiao/shared/FPGA_A/rtl/core'

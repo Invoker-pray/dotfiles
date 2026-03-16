@@ -1,0 +1,1 @@
+../../../packages/rust_hdl/vhdl_ls-x86_64-unknown-linux-musl/vhdl_libraries/vital2000/memory_b.vhdl

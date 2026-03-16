@@ -1,0 +1,7 @@
+[Desktop Entry]
+StartupWMClass=anythingllm-desktop
+Type=Application
+Name=AnythingLLM Desktop
+Exec=/home/jiao/AnythingLLMDesktop.AppImage
+Icon=/home/jiao/.config/anythingllm-desktop/storage/icon.png
+Categories=Utility;

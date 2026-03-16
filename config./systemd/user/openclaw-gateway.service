@@ -1,0 +1,22 @@
+[Unit]
+Description=OpenClaw Gateway (v2026.2.22-2)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/home/jiao/.nvm/versions/node/v22.12.0/bin/node /home/jiao/.local/share/pnpm/global/5/.pnpm/openclaw@2026.2.22-2_@napi-rs+canvas@0.1.94_@types+express@5.0.6_hono@4.12.2_node-llama-cpp@3.15.1/node_modules/openclaw/dist/index.js gateway --port 18789
+Restart=always
+RestartSec=5
+KillMode=process
+Environment=HOME=/home/jiao
+Environment=TMPDIR=/tmp
+Environment=PATH=/home/jiao/.local/share/pnpm:/home/jiao/.nvm/current/bin:/home/jiao/.local/bin:/home/jiao/.npm-global/bin:/home/jiao/bin:/home/jiao/.volta/bin:/home/jiao/.asdf/shims:/home/jiao/.bun/bin:/home/jiao/.fnm/current/bin:/usr/local/bin:/usr/bin:/bin
+Environment=OPENCLAW_GATEWAY_PORT=18789
+Environment=OPENCLAW_GATEWAY_TOKEN=7d20f21c41daac3de95a065e95dd6bdf5f43859991cc9488
+Environment=OPENCLAW_SYSTEMD_UNIT=openclaw-gateway.service
+Environment=OPENCLAW_SERVICE_MARKER=openclaw
+Environment=OPENCLAW_SERVICE_KIND=gateway
+Environment=OPENCLAW_SERVICE_VERSION=2026.2.22-2
+
+[Install]
+WantedBy=default.target
