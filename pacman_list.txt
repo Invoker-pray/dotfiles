@@ -33,6 +33,7 @@ dos2unix
 dosfstools
 downgrade
 efibootmgr
+envycontrol
 ex-vi-compat
 fastfetch
 fcitx5
@@ -68,6 +69,7 @@ inkscape
 intel-ucode
 inxi
 iptables
+ipython
 iverilog
 john
 jq
@@ -131,6 +133,7 @@ nwg-look
 obs-studio
 okular
 ollama
+ollama-cuda
 open-vm-tools
 openjdk21-src
 openocd

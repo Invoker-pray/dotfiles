@@ -22,5 +22,3 @@ The XKEYBOARD keymap compiler (xkbcomp) reports:
 > Warning:          Symbol map for key <FK24> redefined
 >                   Using last definition for conflicting fields
 Errors from xkbcomp are not fatal to the X server
-failed to read client connection (pid 4010)
-failed to read client connection (pid 52781)

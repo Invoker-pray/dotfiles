@@ -54,42 +54,25 @@ export JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=7897 -Dhttps.proxy
 export http_proxy="http://127.0.0.1:7897"
 export https_proxy="http://127.0.0.1:7897"
 #export ftp_proxy="http://127.0.0.1:7897"
-#export no_proxy="localhost,127.0.0.1"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/jiao/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/jiao/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/jiao/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/jiao/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+export no_proxy="localhost,127.0.0.1,::1"
+export NO_PROXY="localhost,127.0.0.1,::1"
 
 
 
 #source ~/python-venv/bin/activate
 
 
-# ~/.zshrc
-if ! pgrep -f "ollama serve" > /dev/null; then
-  ollama serve & disown
-fi
-
-
-#export PATH=/opt/cuda/bin:$PATH
-#export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
 
 export PATH="$HOME/.cargo/bin:$PATH"
 export XILINX_VITIS=~/xilinx/Vitis/2024.2/
 
 export PATH=$PATH:~/nsight-systems-2025.5.1/bin/
-
+#vivado
+export PATH="$PATH:/home/jiao/xilinx/Vivado/2024.2/bin"
+#vitis
+export PATH="$PATH:/home/jiao/xilinx/Vitis/2024.2/bin"
+#vitis_hls
+export PATH="$PATH:/home/jiao/xilinx/Vitis_HLS/2024.2/bin"
 
 
 
@@ -121,16 +104,11 @@ export PATH="$PATH:/home/jiao/.lmstudio/bin"
 # End of LM Studio CLI section
 
 
-#vivado
-export PATH="$PATH:/home/jiao/xilinx/Vivado/2024.2/bin"
-#vitis
-export PATH="$PATH:/home/jiao/xilinx/Vitis/2024.2/bin"
-#vitis_hls
-export PATH="$PATH:/home/jiao/xilinx/Vitis_HLS/2024.2/bin"
-
+# nvm nodejs management tool
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
 # pnpm
 export PNPM_HOME="/home/jiao/.local/share/pnpm"
@@ -139,3 +117,24 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+
+# API 
+#export ANTHROPIC_API_KEY=""
+export OPENAI_API_KEY="sk-lYlVCpbP2HbsWROSi83U0ys2oM8XKflY"
+
+#ollama
+if ! pgrep -f "ollama serve" > /dev/null; then
+  ollama serve & disown
+fi
+
+# ollama cros
+export OLLAMA_ORIGINS="*"
+
+# CUDA
+export PATH=/opt/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
+
+#OLLAMA_ORIGINS="*" ollama serve
+# OpenClaw Completion
+source "/home/jiao/.openclaw/completions/openclaw.zsh"
