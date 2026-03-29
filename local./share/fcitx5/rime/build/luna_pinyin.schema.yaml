@@ -1,18 +1,18 @@
 __build_info:
   rime_version: 1.16.1
   timestamps:
-    default: 1758176996
+    default: 1774018450
     default.custom: 0
     grammar: 0
-    key_bindings: 1758176996
+    key_bindings: 1774018450
     key_bindings.custom: 0
     luna_pinyin.custom: 0
-    luna_pinyin.schema: 1764526661
-    pinyin: 1764526661
+    luna_pinyin.schema: 1774018271
+    pinyin: 1774018271
     pinyin.custom: 0
-    punctuation: 1758176996
+    punctuation: 1774018450
     punctuation.custom: 0
-    symbols: 1758176996
+    symbols: 1774018450
     symbols.custom: 0
 custom_phrase:
   db_class: stabledb
@@ -61,9 +61,6 @@ key_binder:
     - {accept: "Control+y", send: Page_Up, when: composing}
     - {accept: "Alt+v", send: Page_Up, when: composing}
     - {accept: "Control+v", send: Page_Down, when: composing}
-    - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
-    - {accept: "Shift+Tab", send: "Shift+Left", when: composing}
-    - {accept: Tab, send: "Shift+Right", when: composing}
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
     - {accept: comma, send: Page_Up, when: paging}
@@ -386,6 +383,11 @@ schema:
   name: "朙月拼音"
   schema_id: luna_pinyin
   version: 0.26
+selector:
+  bindings:
+    ISO_Left_Tab: previous_candidate
+    "Shift+Tab": previous_candidate
+    Tab: next_candidate
 speller:
   algebra:
     - "abbrev/^([a-z]).+$/$1/"

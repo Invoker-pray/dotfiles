@@ -138,3 +138,6 @@ export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
 #OLLAMA_ORIGINS="*" ollama serve
 # OpenClaw Completion
 source "/home/jiao/.openclaw/completions/openclaw.zsh"
+
+
+
