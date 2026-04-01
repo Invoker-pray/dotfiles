@@ -48,6 +48,7 @@ firefox
 firejail
 flclash-bin
 fzf
+garcon
 ghostwriter
 git
 gjs
@@ -92,6 +93,7 @@ lib32-libx11
 lib32-zlib
 libpng12
 libreoffice-fresh
+libselinux
 libselinux-static
 libspng
 libva-nvidia-driver
@@ -151,6 +153,7 @@ pokemon-colorscripts-git
 power-profiles-daemon
 poxml
 putty
+pv
 python-pip
 qalculate-gtk
 qbittorrent
@@ -218,6 +221,15 @@ xarchiver
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdotool
+xfce4-appfinder
+xfce4-panel
+xfce4-power-manager
+xfce4-session
+xfce4-settings
+xfce4-terminal
+xfdesktop
+xfwm4
+xfwm4-themes
 xorg-bdftopcf
 xorg-font-util
 xorg-fonts-100dpi
@@ -259,6 +271,8 @@ xorg-xvinfo
 xorg-xwayland
 xorg-xwininfo
 xorg-xwud
+xorgxrdp
+xrdp
 yad
 yandex-browser
 yay

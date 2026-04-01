@@ -140,4 +140,29 @@ export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH
 source "/home/jiao/.openclaw/completions/openclaw.zsh"
 
 
+# synopsys
+export SNPSLMD_LICENSE_FILE=27000@archlinux
+export SYNOP_HOME=/opt/synopsys
+#export SYNOP_HOME=/home/jiao/synopsys
+
+# vcs
+export VCS_HOME=$SYNOP_HOME/vcs/W-2024.09-SP1
+export PATH=$PATH:$VCS_HOME/bin
+export LD_LIBRARY_PATH=$VCS_HOME/linux64/lib:$LD_LIBRARY_PATH
+export VCS_NO_LINUX_CHECK=1
+
+# verdi
+export VERDI_HOME=$SYNOP_HOME/verdi/W-2024.09-SP1
+export LD_LIBRARY_PATH=$VERDI_HOME/share/PLI/VCS/linux64
+export PATH=$PATH:$VERDI_HOME/bin
+
+# scl
+export SCL_HOME=$SYNOP_HOME/scl/2024.06
+export PATH=$PATH:$SCL_HOME/linux64/bin
+export VCS_ARCH_OVERRIDE=linux
+
+#license
+export LM_LICENSE_FILE=$SYNOP_HOME/scl/2024.06/admin/license/Synopsys.dat
+#alias lmg="lmgrd -c /home/jiao/synopsys/scl/2024.06/admin/license/Synopsys.dat"
+alias lmg="lmgrd -c /opt/synopsys/scl/2024.06/admin/license/Synopsys.dat"
 
