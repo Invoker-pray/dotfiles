@@ -8,14 +8,22 @@ return function()
 				return nil
 			end
 
-			-- Disable on parser error
+			-- Disable on parser error (wrapped in pcall to avoid nil node crashes)
+			local ok, parser = pcall(vim.treesitter.get_parser)
+			if not ok or not parser then
+				return nil
+			end
+
 			local errors = 200
-			vim.treesitter.get_parser():for_each_tree(function(lt)
-				if lt:root():has_error() and errors >= 0 then
-					errors = errors - 1
-				end
+			local walk_ok = pcall(function()
+				parser:for_each_tree(function(lt)
+					local root = lt:root()
+					if root and root:has_error() and errors >= 0 then
+						errors = errors - 1
+					end
+				end)
 			end)
-			if errors < 0 then
+			if not walk_ok or errors < 0 then
 				return nil
 			end
 

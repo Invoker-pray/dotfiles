@@ -68,6 +68,7 @@ hyprlock
 hyprpolkitagent
 inetutils
 inkscape
+innoextract
 intel-ucode
 inxi
 iptables

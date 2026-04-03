@@ -190,6 +190,9 @@
     },
     "bin": {
       "ada_language_server": "{{source.asset.bin}}"
+    },
+    "neovim": {
+      "lspconfig": "ada_language_server"
     }
   },
   {
@@ -397,7 +400,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40angular/language-server@21.2.6",
+      "id": "pkg:npm/%40angular/language-server@21.2.7",
       "extra_packages": [
         "typescript@5.8.3"
       ],
@@ -512,7 +515,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/ansible-lint@26.3.0",
+      "id": "pkg:pypi/ansible-lint@26.4.0",
       "supported_platforms": [
         "unix"
       ]
@@ -558,7 +561,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v66.4.2",
+      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v66.4.4",
       "asset": {
         "file": "salesforcedx-vscode-apex-{{ version | strip_prefix \"v\" }}.vsix"
       }
@@ -1274,7 +1277,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/Azure/bicep@v0.41.2",
+      "id": "pkg:github/Azure/bicep@v0.42.1",
       "asset": {
         "file": "vscode-bicep.vsix"
       }
@@ -1601,7 +1604,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/bufbuild/buf@v1.66.1",
+      "id": "pkg:github/bufbuild/buf@v1.67.0",
       "asset": [
         {
           "target": "darwin_x64",
@@ -1884,7 +1887,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/cfn-lint@1.48.0"
+      "id": "pkg:pypi/cfn-lint@1.48.1"
     },
     "bin": {
       "cfn-lint": "pypi:cfn-lint"
@@ -2169,7 +2172,7 @@
       "Runtime"
     ],
     "source": {
-      "id": "pkg:github/hirosystems/clarinet@v3.15.1",
+      "id": "pkg:github/hirosystems/clarinet@v15.16.0",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -2861,7 +2864,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40github/copilot-language-server@1.462.0"
+      "id": "pkg:npm/%40github/copilot-language-server@1.464.0"
     },
     "bin": {
       "copilot-language-server": "npm:copilot-language-server"
@@ -3641,7 +3644,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/denoland/deno@v2.7.10",
+      "id": "pkg:github/denoland/deno@v2.7.11",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -4159,7 +4162,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/dprint/dprint@0.53.1",
+      "id": "pkg:github/dprint/dprint@0.53.2",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -9538,7 +9541,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/LuaLS/lua-language-server@3.17.1",
+      "id": "pkg:github/LuaLS/lua-language-server@3.18.0",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -10028,7 +10031,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/mathworks/MATLAB-language-server@19438c8fbc02bdb8bb3bfd1eb17dbc8f39355fbd",
+      "id": "pkg:github/mathworks/MATLAB-language-server@8389289765dd61e83e170a371225a87cc5003ffd",
       "build": {
         "run": "npm install\nnpm run package\n"
       }
@@ -10115,7 +10118,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:github/razziel89/mdslw@0.17.0",
+      "id": "pkg:github/razziel89/mdslw@0.17.1",
       "asset": [
         {
           "target": [
@@ -11301,7 +11304,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/oelint-adv@9.7.0"
+      "id": "pkg:pypi/oelint-adv@9.7.1"
     },
     "bin": {
       "oelint-adv": "pypi:oelint-adv"
@@ -13186,7 +13189,7 @@
       "lsp": "vscode:https://raw.githubusercontent.com/facebook/pyrefly/{{version}}/lsp/package.json"
     },
     "source": {
-      "id": "pkg:pypi/pyrefly@0.59.0"
+      "id": "pkg:pypi/pyrefly@0.59.1"
     },
     "bin": {
       "pyrefly": "pypi:pyrefly"
@@ -13846,7 +13849,7 @@
       "DAP"
     ],
     "source": {
-      "id": "pkg:pypi/robotcode@2.5.0?extra=all"
+      "id": "pkg:pypi/robotcode@2.5.1?extra=all"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/robotcodedev/robotcode/v{{version}}/package.json"
@@ -14236,7 +14239,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/ruff@0.15.8"
+      "id": "pkg:pypi/ruff@0.15.9"
     },
     "bin": {
       "ruff": "pypi:ruff"
@@ -14281,7 +14284,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/rvben/rumdl@v0.1.64",
+      "id": "pkg:github/rvben/rumdl@v0.1.66",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -14808,7 +14811,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/%40shopify/cli@3.92.1"
+      "id": "pkg:npm/%40shopify/cli@3.93.0"
     },
     "bin": {
       "shopify": "npm:shopify"
@@ -15495,7 +15498,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/solhint@6.2.0"
+      "id": "pkg:npm/solhint@6.2.1"
     },
     "bin": {
       "solhint": "npm:solhint"
@@ -15653,7 +15656,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:gem/sorbet@0.6.13073",
+      "id": "pkg:gem/sorbet@0.6.13082",
       "supported_platforms": [
         "unix"
       ]
@@ -15946,7 +15949,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/sbdchd/squawk@v2.44.0",
+      "id": "pkg:github/sbdchd/squawk@v2.45.0",
       "asset": [
         {
           "target": "darwin_x64",
@@ -17913,7 +17916,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/trufflesecurity/trufflehog@v3.94.1",
+      "id": "pkg:github/trufflesecurity/trufflehog@v3.94.2",
       "asset": [
         {
           "target": "darwin_x64",
@@ -18037,7 +18040,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/@typescript/native-preview@7.0.0-dev.20260401.1"
+      "id": "pkg:npm/@typescript/native-preview@7.0.0-dev.20260403.1"
     },
     "bin": {
       "tsgo": "npm:tsgo"
@@ -18175,7 +18178,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/ty@0.0.27"
+      "id": "pkg:pypi/ty@0.0.28"
     },
     "bin": {
       "ty": "pypi:ty"
@@ -18298,7 +18301,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/crate-ci/typos@v1.44.0",
+      "id": "pkg:github/crate-ci/typos@v1.45.0",
       "asset": [
         {
           "target": "darwin_x64",
@@ -18562,7 +18565,7 @@
     ],
     "categories": [],
     "source": {
-      "id": "pkg:github/astral-sh/uv@0.11.2",
+      "id": "pkg:github/astral-sh/uv@0.11.3",
       "asset": [
         {
           "target": "darwin_x64",
@@ -19156,7 +19159,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v66.4.2",
+      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v66.4.4",
       "asset": {
         "file": "salesforcedx-vscode-visualforce-{{ version | strip_prefix \"v\" }}.vsix"
       }
