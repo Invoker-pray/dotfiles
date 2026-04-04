@@ -7,6 +7,6 @@ bluez_card.0C_AE_BD_BA_B0_06:output:headphone-output={"mute":false, "latencyOffs
 bluez_card.0C_AE_BD_BA_B0_06:profile:a2dp-sink=["headphone-output", "headphone-input"]
 bluez_card.0C_AE_BD_BA_B0_06:profile:headset-head-unit=["headphone-hf-output"]
 bluez_card.0C_AE_BD_BA_B0_06:profile:off=["headphone-input", "headphone-hf-output"]
-alsa_card.pci-0000_08_00.6:output:analog-output-speaker={"mute":false, "latencyOffsetNsec":0, "channelVolumes":[0.026997, 0.026997], "channelMap":["FL", "FR"]}
+alsa_card.pci-0000_08_00.6:output:analog-output-speaker={"channelMap":["FL", "FR"], "latencyOffsetNsec":0, "mute":false, "channelVolumes":[0.042872, 0.042872]}
 alsa_card.pci-0000_08_00.6:profile:output:analog-stereo+input:analog-stereo=["analog-output-speaker"]
 bluez_card.0C_AE_BD_BA_B0_06:input:headphone-input={"mute":true, "channelMap":["MONO"], "channelVolumes":[1.157585]}

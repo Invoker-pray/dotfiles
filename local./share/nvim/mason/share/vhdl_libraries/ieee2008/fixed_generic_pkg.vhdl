@@ -1,1 +1,0 @@
-../../../packages/rust_hdl/vhdl_ls-x86_64-unknown-linux-musl/vhdl_libraries/ieee2008/fixed_generic_pkg.vhdl

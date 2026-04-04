@@ -1,1 +1,0 @@
-{"type":"object","properties":{"verible.arguments":{"type":"array","description":"Arguments for verible-verilog-ls server.","items":{"type":"string"},"default":[]},"verible.path":{"type":"string","description":"The path to verible-verilog-ls executable, e.g.: /usr/bin/verible-verilog-ls.","default":"verible-verilog-ls","scope":"machine-overridable"}},"title":"verible"}

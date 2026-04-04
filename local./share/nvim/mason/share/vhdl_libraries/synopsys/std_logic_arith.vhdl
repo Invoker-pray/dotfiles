@@ -1,1 +1,0 @@
-../../../packages/rust_hdl/vhdl_ls-x86_64-unknown-linux-musl/vhdl_libraries/synopsys/std_logic_arith.vhdl

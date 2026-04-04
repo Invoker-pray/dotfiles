@@ -55,7 +55,6 @@ function M.enable_format_on_save(is_configured)
 			})
 		end,
 	})
-
 	if not is_configured then
 		vim.notify(
 			"Successfully enabled format-on-save",

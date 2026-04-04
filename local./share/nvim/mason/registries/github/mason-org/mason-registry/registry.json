@@ -2012,7 +2012,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/CircleCI-Public/circleci-yaml-language-server@0.28.0",
+      "id": "pkg:github/CircleCI-Public/circleci-yaml-language-server@0.29.0",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -4078,7 +4078,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/dot-language-server@3.0.4"
+      "id": "pkg:npm/dot-language-server@3.0.5"
     },
     "bin": {
       "dot-language-server": "npm:dot-language-server"
@@ -5816,7 +5816,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40actions/languageserver@0.3.50"
+      "id": "pkg:npm/%40actions/languageserver@0.3.51"
     },
     "bin": {
       "gh-actions-language-server": "npm:actions-languageserver",
@@ -7642,7 +7642,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/hylo-lang/hylo-language-server@v0.0.10",
+      "id": "pkg:github/hylo-lang/hylo-language-server@v0.0.15",
       "asset": [
         {
           "target": "linux_x64",
@@ -11779,7 +11779,7 @@
       "DAP"
     ],
     "source": {
-      "id": "pkg:github/Nihilus118/perl-debug-adapter@1.0.13",
+      "id": "pkg:github/Nihilus118/perl-debug-adapter@v2.0.0",
       "build": {
         "run": "npm install\nnpm run compile\n"
       }
@@ -13579,7 +13579,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/refurb@2.3.0"
+      "id": "pkg:pypi/refurb@2.3.1"
     },
     "bin": {
       "refurb": "pypi:refurb"
@@ -17778,7 +17778,7 @@
       "lspconfig": "tombi"
     },
     "source": {
-      "id": "pkg:pypi/tombi@0.9.13"
+      "id": "pkg:pypi/tombi@0.9.14"
     },
     "bin": {
       "tombi": "pypi:tombi"
@@ -18229,7 +18229,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/tekumara/typos-vscode@v0.1.50",
+      "id": "pkg:github/tekumara/typos-vscode@v0.1.51",
       "asset": [
         {
           "target": "darwin_x64",
@@ -19751,7 +19751,7 @@
       "Runtime"
     ],
     "source": {
-      "id": "pkg:github/cpisciotta/xcbeautify@3.1.5",
+      "id": "pkg:github/cpisciotta/xcbeautify@3.2.1",
       "asset": [
         {
           "target": "darwin_arm64",
