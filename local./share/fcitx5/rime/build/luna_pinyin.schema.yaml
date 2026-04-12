@@ -12,7 +12,7 @@ __build_info:
     pinyin.custom: 0
     punctuation: 1774018450
     punctuation.custom: 0
-    symbols: 1774018451
+    symbols: 1774018450
     symbols.custom: 0
 custom_phrase:
   db_class: stabledb

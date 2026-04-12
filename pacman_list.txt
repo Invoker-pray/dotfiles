@@ -282,6 +282,7 @@ yosys
 zaproxy
 zathura
 zathura-pdf-mupdf
+zed
 zip
 zsh
 zsh-completions

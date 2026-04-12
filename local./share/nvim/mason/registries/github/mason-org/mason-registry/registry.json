@@ -80,7 +80,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/AdaCore/ada_language_server@2026.1.202601121",
+      "id": "pkg:github/AdaCore/ada_language_server@2026.2.202604091",
       "asset": [
         {
           "target": "darwin_x64",
@@ -400,7 +400,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40angular/language-server@21.2.7",
+      "id": "pkg:npm/%40angular/language-server@21.2.8",
       "extra_packages": [
         "typescript@5.8.3"
       ],
@@ -561,7 +561,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v66.4.4",
+      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v66.5.2",
       "asset": {
         "file": "salesforcedx-vscode-apex-{{ version | strip_prefix \"v\" }}.vsix"
       }
@@ -760,7 +760,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/ast-grep/ast-grep@0.42.0",
+      "id": "pkg:github/ast-grep/ast-grep@0.42.1",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -1307,7 +1307,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:npm/@biomejs/biome@2.4.10"
+      "id": "pkg:npm/@biomejs/biome@2.4.11"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/biomejs/biome-vscode/main/package.json"
@@ -1562,31 +1562,6 @@
     "bin": {
       "bslint": "npm:bslint"
     }
-  },
-  {
-    "name": "buf-language-server",
-    "description": "buf-language-server is a prototype for the beginnings of a Protobuf language server compatible with Buf modules and workspaces.\n",
-    "homepage": "https://github.com/bufbuild/buf-language-server",
-    "licenses": [
-      "Apache-2.0"
-    ],
-    "languages": [
-      "Protobuf"
-    ],
-    "categories": [
-      "LSP"
-    ],
-    "deprecation": {
-      "message": "Package is no longer installable. Please use the buf package instead.",
-      "since": "2026-01-07"
-    },
-    "source": {
-      "id": "pkg:golang/github.com/bufbuild/buf-language-server@v0.0.0-20240213221648-8e42e5e2e24f#cmd/bufls"
-    },
-    "bin": {
-      "bufls": "golang:bufls"
-    },
-    "ci_skip": true
   },
   {
     "name": "buf",
@@ -1971,34 +1946,6 @@
     }
   },
   {
-    "name": "chrome-debug-adapter",
-    "description": "Debug your JavaScript code running in Google Chrome.",
-    "homepage": "https://github.com/Microsoft/vscode-chrome-debug",
-    "licenses": [
-      "MIT"
-    ],
-    "languages": [
-      "JavaScript",
-      "TypeScript"
-    ],
-    "categories": [
-      "DAP"
-    ],
-    "deprecation": {
-      "since": "2026-01-07",
-      "message": "This adapter has been superseded by the js-debug-adapter."
-    },
-    "source": {
-      "id": "pkg:github/Microsoft/vscode-chrome-debug@v4.13.0",
-      "build": {
-        "run": "npm install\nnpm run build\nnpm install --production --ignore-scripts\n"
-      }
-    },
-    "bin": {
-      "chrome-debug-adapter": "node:out/src/chromeDebug.js"
-    }
-  },
-  {
     "name": "circleci-yaml-language-server",
     "description": "Language server for CircleCI YAML configurations",
     "homepage": "https://github.com/CircleCI-Public/circleci-yaml-language-server",
@@ -2102,7 +2049,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:pypi/clang-format@22.1.2"
+      "id": "pkg:pypi/clang-format@22.1.3"
     },
     "bin": {
       "clang-format": "pypi:clang-format",
@@ -2193,54 +2140,6 @@
     },
     "bin": {
       "clarinet": "{{source.asset.bin}}"
-    }
-  },
-  {
-    "name": "clarity-lsp",
-    "description": "Language Server Protocol implementation for Clarity.",
-    "homepage": "https://github.com/hirosystems/clarity-lsp",
-    "licenses": [
-      "GPL-3.0"
-    ],
-    "languages": [
-      "Clarity"
-    ],
-    "categories": [
-      "LSP"
-    ],
-    "deprecation": {
-      "message": "The Clarity language server is no longer available via this package.",
-      "since": "2026-01-07"
-    },
-    "source": {
-      "id": "pkg:github/hirosystems/clarity-lsp@v0.8.0",
-      "asset": [
-        {
-          "target": [
-            "darwin_arm64",
-            "darwin_x64"
-          ],
-          "file": "clarity-lsp-macos-x64.zip",
-          "bin": "clarity-lsp"
-        },
-        {
-          "target": "linux_x64",
-          "file": "clarity-lsp-linux-x64.zip",
-          "bin": "clarity-lsp"
-        },
-        {
-          "target": "win_x64",
-          "file": "clarity-lsp-windows-x64.zip",
-          "bin": "clarity-lsp.exe"
-        }
-      ]
-    },
-    "bin": {
-      "clarity-lsp": "{{source.asset.bin}}"
-    },
-    "ci_skip": true,
-    "neovim": {
-      "lspconfig": "clarity_lsp"
     }
   },
   {
@@ -2864,7 +2763,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40github/copilot-language-server@1.464.0"
+      "id": "pkg:npm/%40github/copilot-language-server@1.466.0"
     },
     "bin": {
       "copilot-language-server": "npm:copilot-language-server"
@@ -3171,7 +3070,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:nuget/csharp-ls@0.22.0"
+      "id": "pkg:nuget/csharp-ls@0.23.0"
     },
     "bin": {
       "csharp-ls": "nuget:csharp-ls"
@@ -3233,7 +3132,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/cspell@9.7.0"
+      "id": "pkg:npm/cspell@10.0.0"
     },
     "bin": {
       "cspell": "npm:cspell"
@@ -3290,6 +3189,57 @@
     },
     "neovim": {
       "lspconfig": "css_variables"
+    }
+  },
+  {
+    "name": "csskit",
+    "description": "Beautiful, fast, and powerful CSS tooling with zero configuration\n",
+    "homepage": "https://csskit.rs",
+    "licenses": [
+      "MIT"
+    ],
+    "languages": [
+      "CSS"
+    ],
+    "categories": [
+      "LSP",
+      "Formatter",
+      "Linter"
+    ],
+    "source": {
+      "id": "pkg:github/csskit/csskit@v0.0.20",
+      "asset": [
+        {
+          "target": "darwin_arm64",
+          "file": "csskit-darwin-arm64"
+        },
+        {
+          "target": "darwin_x64",
+          "file": "csskit-darwin-x64"
+        },
+        {
+          "target": "linux_arm64_gnu",
+          "file": "csskit-linux-arm64"
+        },
+        {
+          "target": "linux_x64_gnu",
+          "file": "csskit-linux-x64"
+        },
+        {
+          "target": "win_arm64",
+          "file": "csskit-win32-arm64.exe"
+        },
+        {
+          "target": "win_x64",
+          "file": "csskit-win32-x64.exe"
+        }
+      ]
+    },
+    "bin": {
+      "csskit": "{{source.asset.file}}"
+    },
+    "neovim": {
+      "lspconfig": "csskit"
     }
   },
   {
@@ -3352,7 +3302,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:golang/cuelang.org/go@v0.16.0#cmd/cue"
+      "id": "pkg:golang/cuelang.org/go@v0.16.1#cmd/cue"
     },
     "bin": {
       "cue": "golang:cue"
@@ -3402,30 +3352,6 @@
     },
     "neovim": {
       "lspconfig": "dagger"
-    }
-  },
-  {
-    "name": "cuepls",
-    "description": "The Official Language Server implementation for CUE.",
-    "homepage": "https://github.com/cue-lang/cue",
-    "licenses": [
-      "Apache-2.0"
-    ],
-    "languages": [
-      "Cue"
-    ],
-    "categories": [
-      "LSP"
-    ],
-    "deprecation": {
-      "message": "The CUE language server is now included in the cue language binary.",
-      "since": "2026-01-07"
-    },
-    "source": {
-      "id": "pkg:golang/cuelang.org/go@v0.10.1#cmd/cuepls"
-    },
-    "bin": {
-      "cuepls": "golang:cuepls"
     }
   },
   {
@@ -3644,7 +3570,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/denoland/deno@v2.7.11",
+      "id": "pkg:github/denoland/deno@v2.7.12",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -4058,7 +3984,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:npm/doctoc@2.3.0"
+      "id": "pkg:npm/doctoc@2.4.0"
     },
     "bin": {
       "doctoc": "npm:doctoc"
@@ -4162,7 +4088,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/dprint/dprint@0.53.2",
+      "id": "pkg:github/dprint/dprint@0.54.0",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -5952,7 +5878,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:cargo/gitlab-ci-ls@1.2.5"
+      "id": "pkg:cargo/gitlab-ci-ls@1.3.0"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/alesbrelih/gitlab-ci-ls/{{version}}/vscode-extension/package.json"
@@ -6218,7 +6144,7 @@
     ],
     "categories": [],
     "source": {
-      "id": "pkg:github/charmbracelet/glow@v2.1.1",
+      "id": "pkg:github/charmbracelet/glow@v2.1.2",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -6616,7 +6542,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:golang/golang.org/x/tools@v0.43.0#cmd/goimports"
+      "id": "pkg:golang/golang.org/x/tools@v0.44.0#cmd/goimports"
     },
     "bin": {
       "goimports": "golang:goimports"
@@ -7091,7 +7017,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:gem/haml_lint@0.72.0"
+      "id": "pkg:gem/haml_lint@0.73.0"
     },
     "bin": {
       "haml-lint": "gem:haml-lint"
@@ -7123,7 +7049,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/elijah-potter/harper@v1.12.0",
+      "id": "pkg:github/elijah-potter/harper@v2.0.0",
       "asset": [
         {
           "target": "linux_x64_gnu",
@@ -7440,7 +7366,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/@herb-tools/language-server@0.9.4"
+      "id": "pkg:npm/@herb-tools/language-server@0.9.5"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/marcoroth/herb/v{{version}}/javascript/packages/vscode/package.json"
@@ -7902,12 +7828,23 @@
     "source": {
       "id": "pkg:openvsx/vscjava/vscode-java-test@0.44.0",
       "download": {
-        "file": "vscjava.vscode-java-test-{{version}}.vsix"
-      }
+        "file": "vscjava.vscode-java-test-{{version}}.vsix",
+        "plugin_version": "0.43.1"
+      },
+      "version_overrides": [
+        {
+          "constraint": "semver:<=0.43.1",
+          "id": "pkg:openvsx/vscjava/vscode-java-test@0.43.1",
+          "download": {
+            "file": "vscjava.vscode-java-test-{{version}}.vsix",
+            "plugin_version": "{{version}}"
+          }
+        }
+      ]
     },
     "share": {
       "java-test/": "extension/server/",
-      "java-test/com.microsoft.java.test.plugin.jar": "extension/server/com.microsoft.java.test.plugin-0.43.1.jar"
+      "java-test/com.microsoft.java.test.plugin.jar": "extension/server/com.microsoft.java.test.plugin-{{ source.download.plugin_version }}.jar"
     }
   },
   {
@@ -8240,7 +8177,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:pypi/json-repair@0.58.7"
+      "id": "pkg:pypi/json-repair@0.59.0"
     },
     "bin": {
       "json_repair": "pypi:json_repair"
@@ -8381,7 +8318,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/mason-org/julia-lsp@v1.149.2",
+      "id": "pkg:github/mason-org/julia-lsp@v1.189.2",
       "asset": [
         {
           "target": "unix",
@@ -8442,7 +8379,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/terror/just-lsp@0.4.0",
+      "id": "pkg:github/terror/just-lsp@0.4.2",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -8520,7 +8457,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/atusy/kakehashi@v0.4.1",
+      "id": "pkg:github/atusy/kakehashi@v0.5.0",
       "asset": [
         {
           "target": "darwin_x64",
@@ -9148,7 +9085,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:cargo/lelwel@0.10.2?features=lsp,cli"
+      "id": "pkg:cargo/lelwel@0.10.4?features=lsp,cli"
     },
     "bin": {
       "lelwel-ls": "cargo:lelwel-ls",
@@ -9541,7 +9478,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/LuaLS/lua-language-server@3.18.0",
+      "id": "pkg:github/LuaLS/lua-language-server@3.18.1",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -9708,7 +9645,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/JohnnyMorganz/luau-lsp@1.64.0",
+      "id": "pkg:github/JohnnyMorganz/luau-lsp@1.65.0",
       "asset": [
         {
           "target": [
@@ -10560,7 +10497,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/neocmakelsp/neocmakelsp@v0.10.1",
+      "id": "pkg:github/neocmakelsp/neocmakelsp@v0.10.2",
       "asset": [
         {
           "target": "darwin",
@@ -11019,41 +10956,6 @@
     }
   },
   {
-    "name": "node-debug2-adapter",
-    "description": "A debug adapter that supports debugging Node via the Chrome Debugging Protocol. No longer maintained.",
-    "homepage": "https://github.com/microsoft/vscode-node-debug2",
-    "licenses": [
-      "MIT"
-    ],
-    "languages": [
-      "JavaScript",
-      "TypeScript"
-    ],
-    "categories": [
-      "DAP"
-    ],
-    "deprecation": {
-      "since": "2026-01-07",
-      "message": "This adapter has been superseded by the js-debug-adapter."
-    },
-    "source": {
-      "id": "pkg:github/microsoft/vscode-node-debug2@v1.43.0",
-      "build": [
-        {
-          "target": "unix",
-          "run": "npm install\nNODE_OPTIONS=--no-experimental-fetch npm run build\nnpm install --production\n"
-        },
-        {
-          "target": "win",
-          "run": "$env:NODE_OPTIONS = '--no-experimental-fetch'\nnpm install\nnpm run build\nnpm install --production\n"
-        }
-      ]
-    },
-    "bin": {
-      "node-debug2-adapter": "node:out/src/nodeDebug.js"
-    }
-  },
-  {
     "name": "nomad",
     "description": "Nomad is an easy-to-use, flexible, and performant workload orchestrator that can deploy a mix of microservice,\nbatch, containerized, and non-containerized applications. Nomad is easy to operate and scale and has native Consul\nand Vault integrations.\n",
     "homepage": "https://www.nomadproject.io/",
@@ -11490,7 +11392,7 @@
       "Runtime"
     ],
     "source": {
-      "id": "pkg:github/open-policy-agent/opa@v1.15.1",
+      "id": "pkg:github/open-policy-agent/opa@v1.15.2",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -11708,7 +11610,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:npm/oxfmt@0.43.0"
+      "id": "pkg:npm/oxfmt@0.44.0"
     },
     "bin": {
       "oxfmt": "npm:oxfmt"
@@ -11733,7 +11635,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/oxlint@1.58.0"
+      "id": "pkg:npm/oxlint@1.59.0"
     },
     "bin": {
       "oxlint": "npm:oxlint"
@@ -11898,7 +11800,7 @@
       "DAP"
     ],
     "source": {
-      "id": "pkg:github/xdebug/vscode-php-debug@v1.40.0",
+      "id": "pkg:github/xdebug/vscode-php-debug@v1.40.1",
       "asset": {
         "file": "php-debug-{{ version | strip_prefix \"v\" }}.vsix"
       }
@@ -12125,34 +12027,6 @@
     }
   },
   {
-    "name": "pkgbuild-language-server",
-    "description": "Language server for ArchLinux/Windows Msys2's PKGBUILD and *.install.",
-    "homepage": "https://pkgbuild-language-server.readthedocs.io/en/latest/",
-    "licenses": [
-      "GPL-3.0"
-    ],
-    "languages": [
-      "Bash"
-    ],
-    "categories": [
-      "LSP"
-    ],
-    "deprecation": {
-      "message": "pkgbuild-language-server is no longer available.",
-      "since": "2026-01-07"
-    },
-    "source": {
-      "id": "pkg:pypi/pkgbuild-language-server@0.0.6"
-    },
-    "bin": {
-      "pkgbuild-language-server": "pypi:pkgbuild-language-server"
-    },
-    "ci_skip": true,
-    "neovim": {
-      "lspconfig": "pkgbuild_language_server"
-    }
-  },
-  {
     "name": "pkl-lsp",
     "description": "Language server for Pkl, implementing the server-side of the Language Server Protocol.",
     "homepage": "https://github.com/apple/pkl-lsp",
@@ -12194,7 +12068,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/supabase-community/postgres-language-server@0.22.1",
+      "id": "pkg:github/supabase-community/postgres-language-server@0.23.0",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -12234,58 +12108,6 @@
     }
   },
   {
-    "name": "postgrestools",
-    "deprecation": {
-      "message": "postgrestools has been renamed to postgres-language-server. Please install the new package instead.",
-      "since": "2026-01-07"
-    },
-    "description": "A collection of language tools and a Language Server Protocol (LSP) implementation for Postgres, focusing on developer experience and reliable SQL tooling.",
-    "homepage": "https://pgtools.dev",
-    "licenses": [
-      "MIT"
-    ],
-    "languages": [
-      "Postgres",
-      "SQL"
-    ],
-    "categories": [
-      "LSP",
-      "Linter"
-    ],
-    "source": {
-      "id": "pkg:github/supabase-community/postgres-language-server@0.22.1",
-      "asset": [
-        {
-          "target": "darwin_arm64",
-          "file": "postgrestools_aarch64-apple-darwin"
-        },
-        {
-          "target": "darwin_x64",
-          "file": "postgrestools_x86_64-apple-darwin"
-        },
-        {
-          "target": "linux_x64_gnu",
-          "file": "postgrestools_x86_64-unknown-linux-gnu"
-        },
-        {
-          "target": "linux_arm64_gnu",
-          "file": "postgrestools_aarch64-unknown-linux-gnu"
-        },
-        {
-          "target": "win_x64",
-          "file": "postgrestools_x86_64-pc-windows-msvc.exe"
-        },
-        {
-          "target": "win_arm64",
-          "file": "postgrestools_aarch64-pc-windows-msvc.exe"
-        }
-      ]
-    },
-    "bin": {
-      "postgrestools": "{{source.asset.file}}"
-    }
-  },
-  {
     "name": "powershell-editor-services",
     "description": "A common platform for PowerShell development support in any editor or application.",
     "homepage": "https://github.com/PowerShell/PowerShellEditorServices",
@@ -12299,7 +12121,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/PowerShell/PowerShellEditorServices@v4.4.0",
+      "id": "pkg:github/PowerShell/PowerShellEditorServices@v4.5.0",
       "asset": {
         "file": "PowerShellEditorServices.zip"
       }
@@ -12338,7 +12160,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:npm/prettier@3.8.1"
+      "id": "pkg:npm/prettier@3.8.2"
     },
     "bin": {
       "prettier": "npm:prettier"
@@ -12454,7 +12276,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40prisma/language-server@31.8.0"
+      "id": "pkg:npm/%40prisma/language-server@31.9.0"
     },
     "schemas": {
       "lsp": "vscode:https://raw.githubusercontent.com/prisma/language-tools/{{version}}/packages/vscode/package.json"
@@ -13100,7 +12922,7 @@
       "Runtime"
     ],
     "source": {
-      "id": "pkg:pypi/pymobiledevice3@9.8.1"
+      "id": "pkg:pypi/pymobiledevice3@9.9.1"
     },
     "bin": {
       "pymobiledevice3": "pypi:pymobiledevice3"
@@ -13189,7 +13011,7 @@
       "lsp": "vscode:https://raw.githubusercontent.com/facebook/pyrefly/{{version}}/lsp/package.json"
     },
     "source": {
-      "id": "pkg:pypi/pyrefly@0.59.1"
+      "id": "pkg:pypi/pyrefly@0.60.1"
     },
     "bin": {
       "pyrefly": "pypi:pyrefly"
@@ -13744,36 +13566,6 @@
     }
   },
   {
-    "name": "rescript-lsp",
-    "deprecation": {
-      "message": "rescript-lsp is deprecated. Use rescript-language-server, its successor.",
-      "since": "2026-01-07"
-    },
-    "description": "Language Server for ReScript.",
-    "homepage": "https://github.com/rescript-lang/rescript-vscode",
-    "licenses": [
-      "MIT"
-    ],
-    "languages": [
-      "ReScript"
-    ],
-    "categories": [
-      "LSP"
-    ],
-    "source": {
-      "id": "pkg:github/rescript-lang/rescript-vscode@1.42.0",
-      "asset": {
-        "file": "rescript-vscode-{{version}}.vsix"
-      }
-    },
-    "schemas": {
-      "lsp": "vscode:https://raw.githubusercontent.com/rescript-lang/rescript-vscode/{{version}}/package.json"
-    },
-    "bin": {
-      "rescript-lsp": "node:extension/server/out/server.js"
-    }
-  },
-  {
     "name": "revive",
     "description": "~6x faster, stricter, configurable, extensible, and beautiful drop-in replacement for golint.",
     "homepage": "https://github.com/mgechev/revive",
@@ -13930,40 +13722,6 @@
     }
   },
   {
-    "name": "rome",
-    "deprecation": {
-      "message": "Rome is deprecated. Use biome, its successor.",
-      "since": "2026-01-07"
-    },
-    "description": "Rome is a formatter, linter, bundler, and more for JavaScript, TypeScript, JSON, HTML, Markdown, and CSS.",
-    "homepage": "https://rome.tools",
-    "licenses": [
-      "MIT"
-    ],
-    "languages": [
-      "JSON",
-      "JavaScript",
-      "TypeScript"
-    ],
-    "categories": [
-      "LSP",
-      "Linter",
-      "Formatter"
-    ],
-    "source": {
-      "id": "pkg:npm/rome@12.1.3"
-    },
-    "schemas": {
-      "lsp": "vscode:https://raw.githubusercontent.com/rome/tools/cli/v{{version}}/editors/vscode/package.json"
-    },
-    "bin": {
-      "rome": "npm:rome"
-    },
-    "neovim": {
-      "lspconfig": "rome"
-    }
-  },
-  {
     "name": "rpm_lsp_server",
     "description": "Language server protocol (LSP) support for RPM Spec files.",
     "homepage": "https://github.com/dcermak/rpm-spec-language-server",
@@ -14100,7 +13858,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:gem/rubocop@1.86.0"
+      "id": "pkg:gem/rubocop@1.86.1"
     },
     "bin": {
       "rubocop": "gem:rubocop"
@@ -14200,30 +13958,6 @@
     }
   },
   {
-    "name": "ruff-lsp",
-    "description": "A Language Server Protocol implementation for Ruff - An extremely fast Python linter, written in Rust.",
-    "homepage": "https://github.com/astral-sh/ruff-lsp/",
-    "licenses": [
-      "MIT"
-    ],
-    "languages": [
-      "Python"
-    ],
-    "categories": [
-      "LSP"
-    ],
-    "deprecation": {
-      "since": "2026-01-07",
-      "message": "please use the mason package `ruff` as replacement. The command `ruff server` supports the same feature set as ruff-lsp, but with superior performance and no installation required. ruff server was marked as stable in Ruff v0.5.3."
-    },
-    "source": {
-      "id": "pkg:pypi/ruff-lsp@0.0.62"
-    },
-    "bin": {
-      "ruff-lsp": "pypi:ruff-lsp"
-    }
-  },
-  {
     "name": "ruff",
     "description": "An extremely fast Python linter and code formatter, written in Rust.",
     "homepage": "https://github.com/astral-sh/ruff/",
@@ -14239,7 +13973,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/ruff@0.15.9"
+      "id": "pkg:pypi/ruff@0.15.10"
     },
     "bin": {
       "ruff": "pypi:ruff"
@@ -14284,7 +14018,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/rvben/rumdl@v0.1.66",
+      "id": "pkg:github/rvben/rumdl@v0.1.68",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -14345,7 +14079,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/rust-lang/rust-analyzer@2026-03-30",
+      "id": "pkg:github/rust-lang/rust-analyzer@2026-04-06",
       "asset": [
         {
           "target": "linux_x64_gnu",
@@ -14438,51 +14172,6 @@
     },
     "neovim": {
       "lspconfig": "vhdl_ls"
-    }
-  },
-  {
-    "name": "rustfmt",
-    "description": "A tool for formatting Rust code according to style guidelines.",
-    "homepage": "https://github.com/rust-lang/rustfmt",
-    "licenses": [
-      "Apache-2.0",
-      "MIT"
-    ],
-    "languages": [
-      "Rust"
-    ],
-    "categories": [
-      "Formatter"
-    ],
-    "deprecation": {
-      "since": "2026-01-07",
-      "message": "rustfmt should now be installed via rustup."
-    },
-    "source": {
-      "id": "pkg:github/rust-lang/rustfmt@v1.5.1",
-      "asset": [
-        {
-          "target": [
-            "darwin_x64",
-            "darwin_arm64"
-          ],
-          "file": "rustfmt_macos-x86_64_{{version}}.tar.gz",
-          "bin": "rustfmt_macos-x86_64_{{version}}/rustfmt"
-        },
-        {
-          "target": "linux_x64",
-          "file": "rustfmt_linux-x86_64_{{version}}.tar.gz",
-          "bin": "rustfmt_linux-x86_64_{{version}}/rustfmt"
-        },
-        {
-          "target": "win_x64",
-          "file": "rustfmt_windows-x86_64-msvc_{{version}}.zip",
-          "bin": "rustfmt_windows-x86_64-msvc_{{version}}/rustfmt.exe"
-        }
-      ]
-    },
-    "bin": {
-      "rustfmt": "{{source.asset.bin}}"
     }
   },
   {
@@ -14617,7 +14306,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/semgrep@1.157.0",
+      "id": "pkg:pypi/semgrep@1.158.0",
       "supported_platforms": [
         "unix"
       ]
@@ -14764,7 +14453,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:github/mvdan/sh@v3.13.0",
+      "id": "pkg:github/mvdan/sh@v3.13.1",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -14811,41 +14500,13 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/%40shopify/cli@3.93.0"
+      "id": "pkg:npm/%40shopify/cli@3.93.2"
     },
     "bin": {
       "shopify": "npm:shopify"
     },
     "neovim": {
       "lspconfig": "shopify_theme_ls"
-    }
-  },
-  {
-    "name": "shopify-theme-check",
-    "deprecation": {
-      "since": "2026-01-07",
-      "message": "Theme-check has deprecated, use shopify-cli(shopify_theme_ls) instead, its successor."
-    },
-    "description": "The Ultimate Shopify Theme Linter.",
-    "homepage": "https://github.com/Shopify/theme-check",
-    "licenses": [
-      "proprietary"
-    ],
-    "languages": [
-      "Liquid"
-    ],
-    "categories": [
-      "LSP",
-      "Linter"
-    ],
-    "source": {
-      "id": "pkg:gem/theme-check@1.15.0"
-    },
-    "bin": {
-      "theme-check-language-server": "gem:theme-check-language-server"
-    },
-    "neovim": {
-      "lspconfig": "theme_check"
     }
   },
   {
@@ -15330,7 +14991,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/snyk/cli@v1.1303.2",
+      "id": "pkg:github/snyk/cli@v1.1304.0",
       "asset": [
         {
           "target": "darwin_x64",
@@ -15656,7 +15317,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:gem/sorbet@0.6.13082",
+      "id": "pkg:gem/sorbet@0.6.13114",
       "supported_platforms": [
         "unix"
       ]
@@ -15762,7 +15423,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40spyglassmc/language-server@0.4.56"
+      "id": "pkg:npm/%40spyglassmc/language-server@0.4.57"
     },
     "bin": {
       "spyglassmc-language-server": "npm:spyglassmc-language-server"
@@ -15949,7 +15610,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/sbdchd/squawk@v2.45.0",
+      "id": "pkg:github/sbdchd/squawk@v2.46.0",
       "asset": [
         {
           "target": "darwin_x64",
@@ -16300,7 +15961,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/johnnymorganz/stylua@v2.4.0",
+      "id": "pkg:github/johnnymorganz/stylua@v2.4.1",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -16549,50 +16210,6 @@
     }
   },
   {
-    "name": "swift-mesonlsp",
-    "description": "An unofficial, unendorsed language server for meson written in Swift.",
-    "homepage": "https://github.com/JCWasmx86/Swift-MesonLSP",
-    "licenses": [
-      "GPL-3.0"
-    ],
-    "languages": [
-      "Meson"
-    ],
-    "categories": [
-      "LSP"
-    ],
-    "deprecation": {
-      "message": "swift-mesonlsp has been superseded by mesonlsp.",
-      "since": "2026-01-07"
-    },
-    "source": {
-      "id": "pkg:github/JCWasmx86/Swift-MesonLSP@v3.1.3",
-      "asset": [
-        {
-          "target": "linux_x64_gnu",
-          "file": "Swift-MesonLSP.zip",
-          "bin": "Swift-MesonLSP"
-        },
-        {
-          "target": "darwin",
-          "file": "Swift-MesonLSP-macos13.zip",
-          "bin": "Swift-MesonLSP"
-        },
-        {
-          "target": "win_x64",
-          "file": "Swift-MesonLSP-win64.zip",
-          "bin": "Swift-MesonLSP.exe"
-        }
-      ]
-    },
-    "bin": {
-      "Swift-MesonLSP": "{{source.asset.bin}}"
-    },
-    "neovim": {
-      "lspconfig": "swift_mesonls"
-    }
-  },
-  {
     "name": "swiftformat",
     "description": "A command-line tool and Xcode Extension for formatting Swift code.",
     "homepage": "https://github.com/nicklockwood/SwiftFormat",
@@ -16664,33 +16281,6 @@
     },
     "bin": {
       "swiftlint": "{{source.asset.bin}}"
-    }
-  },
-  {
-    "name": "systemd-language-server",
-    "deprecation": {
-      "message": "systemd-language-server is deprecated in favor of systemd-lsp",
-      "since": "2026-01-07"
-    },
-    "description": "Language Server for Systemd unit files\n",
-    "homepage": "https://github.com/psacawa/systemd-language-server",
-    "licenses": [
-      "GPL-3.0"
-    ],
-    "languages": [
-      "systemd"
-    ],
-    "categories": [
-      "LSP"
-    ],
-    "source": {
-      "id": "pkg:pypi/systemd-language-server@0.3.5"
-    },
-    "bin": {
-      "systemd-language-server": "pypi:systemd-language-server"
-    },
-    "neovim": {
-      "lspconfig": "systemd_ls"
     }
   },
   {
@@ -17363,7 +16953,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:npm/textlint@15.5.2"
+      "id": "pkg:npm/textlint@15.5.4"
     },
     "bin": {
       "textlint": "npm:textlint"
@@ -17626,7 +17216,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/Myriad-Dreamin/tinymist@v0.14.14",
+      "id": "pkg:github/Myriad-Dreamin/tinymist@v0.14.16",
       "asset": [
         {
           "target": "linux_x64_gnu",
@@ -17778,7 +17368,7 @@
       "lspconfig": "tombi"
     },
     "source": {
-      "id": "pkg:pypi/tombi@0.9.14"
+      "id": "pkg:pypi/tombi@0.9.16"
     },
     "bin": {
       "tombi": "pypi:tombi"
@@ -17916,7 +17506,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:github/trufflesecurity/trufflehog@v3.94.2",
+      "id": "pkg:github/trufflesecurity/trufflehog@v3.94.3",
       "asset": [
         {
           "target": "darwin_x64",
@@ -18040,7 +17630,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/@typescript/native-preview@7.0.0-dev.20260403.1"
+      "id": "pkg:npm/@typescript/native-preview@7.0.0-dev.20260410.1"
     },
     "bin": {
       "tsgo": "npm:tsgo"
@@ -18063,7 +17653,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/%40typespec/compiler@1.10.0"
+      "id": "pkg:npm/%40typespec/compiler@1.11.0"
     },
     "bin": {
       "tsp-server": "npm:tsp-server"
@@ -18178,7 +17768,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/ty@0.0.28"
+      "id": "pkg:pypi/ty@0.0.29"
     },
     "bin": {
       "ty": "pypi:ty"
@@ -18330,144 +17920,6 @@
     }
   },
   {
-    "name": "typst-lsp",
-    "deprecation": {
-      "message": "typst-lsp is no longer maintained. Use tinymist instead.",
-      "since": "2026-01-07"
-    },
-    "description": "A brand-new language server for Typst.",
-    "homepage": "https://github.com/nvarner/typst-lsp",
-    "licenses": [
-      "MIT"
-    ],
-    "languages": [
-      "Typst"
-    ],
-    "categories": [
-      "LSP"
-    ],
-    "source": {
-      "id": "pkg:github/nvarner/typst-lsp@v0.13.0",
-      "asset": [
-        {
-          "target": "darwin_arm64",
-          "file": "typst-lsp-aarch64-apple-darwin"
-        },
-        {
-          "target": "darwin_x64",
-          "file": "typst-lsp-x86_64-apple-darwin"
-        },
-        {
-          "target": "linux_arm64_gnu",
-          "file": "typst-lsp-aarch64-unknown-linux-gnu"
-        },
-        {
-          "target": "linux_x64_gnu",
-          "file": "typst-lsp-x86_64-unknown-linux-gnu"
-        },
-        {
-          "target": "linux_x64",
-          "file": "typst-lsp-x86_64-unknown-linux-musl"
-        },
-        {
-          "target": "win_x64",
-          "file": "typst-lsp-x86_64-pc-windows-msvc.exe"
-        },
-        {
-          "target": "win_arm64",
-          "file": "typst-lsp-aarch64-pc-windows-msvc.exe"
-        }
-      ],
-      "version_overrides": [
-        {
-          "constraint": "semver:<=v0.7.2",
-          "id": "pkg:github/nvarner/typst-lsp@v0.7.2",
-          "asset": [
-            {
-              "target": "darwin_arm64",
-              "file": "typst-lsp-darwin-arm64"
-            },
-            {
-              "target": "darwin_x64",
-              "file": "typst-lsp-darwin-x64"
-            },
-            {
-              "target": "linux_arm64",
-              "file": "typst-lsp-linux-arm64"
-            },
-            {
-              "target": "linux_x64",
-              "file": "typst-lsp-linux-x64"
-            },
-            {
-              "target": "win_arm64",
-              "file": "typst-lsp-win32-arm64.exe"
-            },
-            {
-              "target": "win_x64",
-              "file": "typst-lsp-win32-x64.exe"
-            }
-          ]
-        }
-      ]
-    },
-    "bin": {
-      "typst-lsp": "{{source.asset.file}}"
-    }
-  },
-  {
-    "name": "typstfmt",
-    "description": "A formatter for the Typst language.",
-    "homepage": "https://github.com/astrale-sharp/typstfmt",
-    "licenses": [
-      "MIT",
-      "Apache-2.0"
-    ],
-    "languages": [
-      "Typst"
-    ],
-    "categories": [
-      "Formatter"
-    ],
-    "deprecation": {
-      "message": "Package is unmaintained.",
-      "since": "2026-01-07"
-    },
-    "source": {
-      "id": "pkg:github/astrale-sharp/typstfmt@0.2.10",
-      "asset": [
-        {
-          "target": "darwin_arm64",
-          "file": "typstfmt-aarch64-apple-darwin.tar.xz",
-          "bin": "typstfmt-aarch64-apple-darwin/typstfmt"
-        },
-        {
-          "target": "darwin_x64",
-          "file": "typstfmt-x86_64-apple-darwin.tar.xz",
-          "bin": "typstfmt-x86_64-apple-darwin/typstfmt"
-        },
-        {
-          "target": "linux_arm64",
-          "file": "typstfmt-aarch64-unknown-linux-musl.tar.xz",
-          "bin": "typstfmt-aarch64-unknown-linux-musl/typstfmt"
-        },
-        {
-          "target": "linux_x64",
-          "file": "typstfmt-x86_64-unknown-linux-musl.tar.xz",
-          "bin": "typstfmt-x86_64-unknown-linux-musl/typstfmt"
-        },
-        {
-          "target": "win_x64",
-          "file": "typstfmt-x86_64-pc-windows-msvc.zip",
-          "bin": "typstfmt-x86_64-pc-windows-msvc/typstfmt.exe"
-        }
-      ]
-    },
-    "bin": {
-      "typstfmt": "{{source.asset.bin}}"
-    }
-  },
-  {
     "name": "typstyle",
     "description": "Beautiful and reliable typst code formatter",
     "homepage": "https://github.com/Enter-tainer/typstyle",
@@ -18565,7 +18017,7 @@
     ],
     "categories": [],
     "source": {
-      "id": "pkg:github/astral-sh/uv@0.11.3",
+      "id": "pkg:github/astral-sh/uv@0.11.6",
       "asset": [
         {
           "target": "darwin_x64",
@@ -19159,7 +18611,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v66.4.4",
+      "id": "pkg:github/forcedotcom/salesforcedx-vscode@v66.5.2",
       "asset": {
         "file": "salesforcedx-vscode-visualforce-{{ version | strip_prefix \"v\" }}.vsix"
       }
@@ -19890,31 +19342,6 @@
     }
   },
   {
-    "name": "xo",
-    "description": "JavaScript/TypeScript linter (ESLint wrapper) with great defaults.",
-    "homepage": "https://github.com/xojs/xo",
-    "licenses": [
-      "MIT"
-    ],
-    "languages": [
-      "JavaScript",
-      "TypeScript"
-    ],
-    "categories": [
-      "Linter"
-    ],
-    "deprecation": {
-      "since": "2026-01-07",
-      "message": "xo should now be installed locally in the project where it's used."
-    },
-    "source": {
-      "id": "pkg:npm/xo@2.0.2"
-    },
-    "bin": {
-      "xo": "npm:xo"
-    }
-  },
-  {
     "name": "yaml-language-server",
     "description": "Language Server for YAML Files.",
     "homepage": "https://github.com/redhat-developer/yaml-language-server",
@@ -20466,7 +19893,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:pypi/zuban@0.6.2"
+      "id": "pkg:pypi/zuban@0.7.0"
     },
     "bin": {
       "zuban": "pypi:zuban"

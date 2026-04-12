@@ -53,6 +53,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 export JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=7897 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7897"
 export http_proxy="http://127.0.0.1:7897"
 export https_proxy="http://127.0.0.1:7897"
+export all_proxy="socks5://127.0.0.2:7897"
 #export ftp_proxy="http://127.0.0.1:7897"
 export no_proxy="localhost,127.0.0.1,::1"
 export NO_PROXY="localhost,127.0.0.1,::1"
@@ -119,10 +120,6 @@ esac
 # pnpm end
 
 
-# API 
-#export ANTHROPIC_API_KEY=""
-export OPENAI_API_KEY="sk-lYlVCpbP2HbsWROSi83U0ys2oM8XKflY"
-
 #ollama
 if ! pgrep -f "ollama serve" > /dev/null; then
   ollama serve & disown
@@ -165,4 +162,23 @@ export VCS_ARCH_OVERRIDE=linux
 export LM_LICENSE_FILE=$SYNOP_HOME/scl/2024.06/admin/license/Synopsys.dat
 #alias lmg="lmgrd -c /home/jiao/synopsys/scl/2024.06/admin/license/Synopsys.dat"
 alias lmg="lmgrd -c /opt/synopsys/scl/2024.06/admin/license/Synopsys.dat"
+
+
+
+
+# Claude Code environment variables (updated by setup script)
+#export ANTHROPIC_BASE_URL="https://ai4xy.com/claudecode"
+#export ANTHROPIC_AUTH_TOKEN="sk-ant-oat01-U1cYBtAJ4M7WpvMDrrCxucLF0PEtjcGC"
+
+# API 
+#export BASE_URL="https://ai4xy.com/codex"
+#export ANTHROPIC_API_KEY="sk-ant-oat01-j7Fb3L0WKbMv01qxO8j1mMLYtZsROmKh"
+#export OPENAI_API_KEY="sk-AG0I2fc9rjAJyBUeoEVYaYnfkmteSipC"
+
+## ai4xy
+# Codex API密钥
+export CODEX_API_KEY="sk-AG0I2fc9rjAJyBUeoEVYaYnfkmteSipC"
+
+
+
 
