@@ -166,19 +166,21 @@ alias lmg="lmgrd -c /opt/synopsys/scl/2024.06/admin/license/Synopsys.dat"
 
 
 
-# Claude Code environment variables (updated by setup script)
-#export ANTHROPIC_BASE_URL="https://ai4xy.com/claudecode"
-#export ANTHROPIC_AUTH_TOKEN="sk-ant-oat01-U1cYBtAJ4M7WpvMDrrCxucLF0PEtjcGC"
 
-# API 
-#export BASE_URL="https://ai4xy.com/codex"
-#export ANTHROPIC_API_KEY="sk-ant-oat01-j7Fb3L0WKbMv01qxO8j1mMLYtZsROmKh"
-#export OPENAI_API_KEY="sk-AG0I2fc9rjAJyBUeoEVYaYnfkmteSipC"
 
-## ai4xy
+export PATH=/home/jiao/git/ciciec2026_loongson_preliminary/sdk/toolchains/loongson-gnu-toolchain-8.3-x86_64-loongarch32r-linux-gnusf-v2.0/bin:$PATH
+
+
+
+
+
+
+
+# OpenAI API密钥
+export OPENAI_API_KEY="sk-AG0I2fc9rjAJyBUeoEVYaYnfkmteSipC"
 # Codex API密钥
 export CODEX_API_KEY="sk-AG0I2fc9rjAJyBUeoEVYaYnfkmteSipC"
 
-
-
-
+# Claude Code environment variables (added by setup script)
+export ANTHROPIC_BASE_URL="https://ai4xy.com/claudecode"
+export ANTHROPIC_AUTH_TOKEN="sk-ant-oat01-U1cYBtAJ4M7WpvMDrrCxucLF0PEtjcGC"

@@ -17,6 +17,7 @@ Environment=NO_PROXY=localhost,127.0.0.1,::1
 Environment=http_proxy=http://127.0.0.1:7897
 Environment=https_proxy=http://127.0.0.1:7897
 Environment=no_proxy=localhost,127.0.0.1,::1
+Environment=all_proxy=socks5://127.0.0.2:7897
 Environment=PATH=/home/jiao/.local/share/pnpm:/home/jiao/.nvm/current/bin:/home/jiao/.local/bin:/home/jiao/.npm-global/bin:/home/jiao/bin:/home/jiao/.volta/bin:/home/jiao/.asdf/shims:/home/jiao/.bun/bin:/home/jiao/.fnm/current/bin:/usr/local/bin:/usr/bin:/bin
 Environment=OPENCLAW_GATEWAY_PORT=18789
 Environment=OPENCLAW_SYSTEMD_UNIT=openclaw-gateway.service
