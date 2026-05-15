@@ -132,12 +132,14 @@ settings["null_ls_deps"] = {
 	"clang_format",
 	"gofumpt",
 	"goimports",
+	"google_java_format",
 	"prettier",
+	"scalafmt",
 	"shfmt",
 	"stylua",
 	"vint",
-}
-
+	}
+	
 -- Debug Adapter Protocol (DAP) clients to install and configure during bootstrap.
 -- Supported DAPs: https://github.com/jay-babu/mason-nvim-dap.nvim/blob/main/lua/mason-nvim-dap/mappings/source.lua
 ---@type string[]

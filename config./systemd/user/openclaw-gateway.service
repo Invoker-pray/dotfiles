@@ -4,6 +4,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
+EnvironmentFile=/home/jiao/.config/environment.d/openclaw.conf
 ExecStart=/home/jiao/.nvm/versions/node/v22.16.0/bin/node /home/jiao/.nvm/versions/node/v22.16.0/lib/node_modules/openclaw/dist/index.js gateway --port 18789
 Restart=always
 RestartSec=5

@@ -163,24 +163,29 @@ export LM_LICENSE_FILE=$SYNOP_HOME/scl/2024.06/admin/license/Synopsys.dat
 #alias lmg="lmgrd -c /home/jiao/synopsys/scl/2024.06/admin/license/Synopsys.dat"
 alias lmg="lmgrd -c /opt/synopsys/scl/2024.06/admin/license/Synopsys.dat"
 
-
-
-
-
-
 export PATH=/home/jiao/git/ciciec2026_loongson_preliminary/sdk/toolchains/loongson-gnu-toolchain-8.3-x86_64-loongarch32r-linux-gnusf-v2.0/bin:$PATH
 
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+# deepseek
+#export OPENAI_BASE_URL=https://api.deepseek.com
+export ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic
+export ANTHROPIC_API_KEY="sk-1adbc5ffb65b4c0a88b9fc6ca34d6592"
+export OPENAI_API_KEY="sk-1adbc5ffb65b4c0a88b9fc6ca34d6592"
 
+export DEEPSEEK_API_KEY="sk-1adbc5ffb65b4c0a88b9fc6ca34d6592"
+export ANTHROPIC_MODEL=deepseek-v4-pro
+export ANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-v4-pro
+export ANTHROPIC_DEFAULT_SONNET_MODEL=deepseek-v4-pro
+export ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-flash
 
+export CLAUDE_CODE_SUBAGENT_MODEL=deepseek-v4-flash
+export CLAUDE_CODE_EFFORT_LEVEL=max
+# coursier
+export  PATH="$PATH:$HOME/.local/share/coursier/bin"
 
+# tor
 
-
-# OpenAI API密钥
-export OPENAI_API_KEY="sk-AG0I2fc9rjAJyBUeoEVYaYnfkmteSipC"
-# Codex API密钥
-export CODEX_API_KEY="sk-AG0I2fc9rjAJyBUeoEVYaYnfkmteSipC"
-
-# Claude Code environment variables (added by setup script)
-export ANTHROPIC_BASE_URL="https://ai4xy.com/claudecode"
-export ANTHROPIC_AUTH_TOKEN="sk-ant-oat01-U1cYBtAJ4M7WpvMDrrCxucLF0PEtjcGC"
+alias torbrowser="./appimages/Browser/start-tor-browser"

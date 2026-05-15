@@ -35,6 +35,12 @@ return function()
 				"markdown",
 			},
 		}),
+		btns.formatting.scalafmt.with({
+			filetypes = { "scala", "sbt" },
+		}),
+		btns.formatting.google_java_format.with({
+			filetypes = { "java" },
+		}),
 	}
 	require("modules.utils").load_plugin("null-ls", {
 		border = "rounded",

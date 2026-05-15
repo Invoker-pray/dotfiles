@@ -42,4 +42,13 @@ lang["chrisbra/csv.vim"] = {
 	lazy = true,
 	ft = "csv",
 }
+lang["scalameta/nvim-metals"] = {
+	lazy = true,
+	ft = { "scala", "sbt", "java" },
+	dependencies = {
+		"nvim-lua/plenary.nvim",
+		"mfussenegger/nvim-dap",
+	},
+	config = require("lang.metals"),
+}
 return lang
