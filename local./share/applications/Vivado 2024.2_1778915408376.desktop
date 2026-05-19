@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Vivado 2024.2
+Comment=Vivado 2024.2
+Icon=/home/jiao/xilinx/Vivado/2024.2/doc/images/vivado_logo.png
+Exec=/home/jiao/xilinx/Vivado/2024.2/bin/vivado 

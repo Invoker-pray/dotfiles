@@ -68,12 +68,15 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export XILINX_VITIS=~/xilinx/Vitis/2024.2/
 
 export PATH=$PATH:~/nsight-systems-2025.5.1/bin/
+
 #vivado
 export PATH="$PATH:/home/jiao/xilinx/Vivado/2024.2/bin"
 #vitis
 export PATH="$PATH:/home/jiao/xilinx/Vitis/2024.2/bin"
 #vitis_hls
 export PATH="$PATH:/home/jiao/xilinx/Vitis_HLS/2024.2/bin"
+#xsetup
+export PATH="$PATH:/home/jiao/xilinx/.xinstall/Vivado_2024.2"
 
 
 
