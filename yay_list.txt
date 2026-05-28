@@ -178,6 +178,7 @@ rust-analyzer
 rye
 sbt
 scons
+screen
 sddm
 sddm-sugar-candy-git
 slurp

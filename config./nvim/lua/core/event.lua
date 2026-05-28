@@ -144,7 +144,7 @@ function autocmd.load_autocmds()
 		ft = {
 			{ "FileType", "*", "setlocal formatoptions-=cro" },
 			{ "FileType", "alpha", "setlocal showtabline=0" },
-			{ "FileType", "markdown,scala,java", "setlocal wrap" },
+			{ "FileType", "markdown,scala,java,tex", "setlocal wrap" },
 			{ "FileType", "dap-repl", "lua require('dap.ext.autocompl').attach()" },
 			{
 				"FileType",
