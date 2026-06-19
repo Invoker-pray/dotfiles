@@ -50,7 +50,7 @@ export CVAT_HOST=127.0.0.1
 
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk/
 export PATH=$JAVA_HOME/bin:$PATH
-export JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=7897 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7897"
+#export JAVA_OPTS="-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=7897 -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7897"
 export http_proxy="http://127.0.0.1:7897"
 export https_proxy="http://127.0.0.1:7897"
 export all_proxy="socks5://127.0.0.2:7897"
@@ -141,6 +141,11 @@ source "/home/jiao/.openclaw/completions/openclaw.zsh"
 
 
 # synopsys
+##########################################################
+# JAVA_OPTS 开启后，也就是开启proxy环境会导致vcs出现神奇bug，
+# 暂时没找到原因，不过可以思考一下proxy对vcs有什么影响，有可能是影响联网license验证？
+##########################################################
+
 export SNPSLMD_LICENSE_FILE=27000@archlinux
 export SYNOP_HOME=/opt/synopsys
 #export SYNOP_HOME=/home/jiao/synopsys
@@ -186,9 +191,24 @@ export ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-flash
 
 export CLAUDE_CODE_SUBAGENT_MODEL=deepseek-v4-flash
 export CLAUDE_CODE_EFFORT_LEVEL=max
+
+
+########################################################################
+########################################################################
+#export ANTHROPIC_AUTH_TOKEN='sk-nRbDpRKiELYD4h6vp1VkOHpsS6PhOKuWoagmSYDunTze5kUA'
+#export ANTHROPIC_BASE_URL='https://aimoniker.top'
+
 # coursier
 export  PATH="$PATH:$HOME/.local/share/coursier/bin"
+
+# VCS: override CC_CG to use gcc wrapper (gcc >=14 compat)
+export MAKEFLAGS="CC_CG=$HOME/.local/bin/gcc-vcs"
 
 # tor
 
 alias torbrowser="./appimages/Browser/start-tor-browser"
+
+. "$HOME/.local/bin/env"
+
+# Hermes Agent — ensure ~/.local/bin is on PATH
+export PATH="$HOME/.local/bin:$PATH"
