@@ -87,8 +87,16 @@ cp -r ~/.local/share/sddm local./share
 cp -r ~/.local/share/qutebrowser local./share
 cp -r ~/.local/share/nvim local./share
 
-#systemd
+# emoji font (Noto Color Emoji)
+mkdir -p local./share/fonts/noto
+cp ~/.local/share/fonts/noto/NotoColorEmoji.ttf local./share/fonts/noto/
+
+#systemd (including OpenClaw service drop-ins)
 cp -r ~/.config/systemd config.
+
+# OpenClaw environment
+mkdir -p config./environment.d
+cp ~/.config/environment.d/openclaw.conf config./environment.d/
 
 #zatura
 cp -r ~/.config/zathura config.

@@ -65,18 +65,25 @@ export NO_PROXY="localhost,127.0.0.1,::1"
 
 
 export PATH="$HOME/.cargo/bin:$PATH"
-export XILINX_VITIS=~/xilinx/Vitis/2024.2/
+export XILINX_VITIS=~/xilinx/Vitis/2025.2/
 
 export PATH=$PATH:~/nsight-systems-2025.5.1/bin/
 
 #vivado
-export PATH="$PATH:/home/jiao/xilinx/Vivado/2024.2/bin"
+export PATH="$PATH:/home/jiao/xilinx/2025.2/Vivado/bin"
 #vitis
-export PATH="$PATH:/home/jiao/xilinx/Vitis/2024.2/bin"
+export PATH="$PATH:/home/jiao/xilinx/2025.2/Vitis/bin"
 #vitis_hls
-export PATH="$PATH:/home/jiao/xilinx/Vitis_HLS/2024.2/bin"
+export PATH="$PATH:/home/jiao/xilinx/2025.2/Vitis_HLS/bin"
 #xsetup
-export PATH="$PATH:/home/jiao/xilinx/.xinstall/Vivado_2024.2"
+export PATH="$PATH:/home/jiao/xilinx/.xinstall/Vivado_2025.2"
+
+# Vivado/Vitis 需要自己的旧版 libstdc++，但不能污染全局 LD_LIBRARY_PATH
+# （否则 xelatex、okular 等系统应用会因缺少 GLIBCXX_3.4.30+ 而崩溃）
+# 通过 shell 函数在启动时才注入库路径
+__vivado_lib_path="/home/jiao/xilinx/2025.2/Vivado/lib/lnx64.o/SuSE:/home/jiao/xilinx/2025.2/Vivado/lib/lnx64.o/Default:/home/jiao/xilinx/2025.2/Vivado/lib/lnx64.o"
+vivado()  { LD_LIBRARY_PATH="${__vivado_lib_path}:${LD_LIBRARY_PATH}" /home/jiao/xilinx/2025.2/Vivado/bin/vivado "$@"; }
+vitis()   { LD_LIBRARY_PATH="${__vivado_lib_path}:${LD_LIBRARY_PATH}" /home/jiao/xilinx/2025.2/Vitis/bin/vitis "$@"; }
 
 
 
@@ -123,12 +130,7 @@ esac
 # pnpm end
 
 
-#ollama
-if ! pgrep -f "ollama serve" > /dev/null; then
-  ollama serve & disown
-fi
-
-# ollama cros
+# ollama (managed by user-level systemd service: systemctl --user enable --now ollama)
 export OLLAMA_ORIGINS="*"
 
 # CUDA
@@ -158,8 +160,15 @@ export VCS_NO_LINUX_CHECK=1
 
 # verdi
 export VERDI_HOME=$SYNOP_HOME/verdi/W-2024.09-SP1
-export LD_LIBRARY_PATH=$VERDI_HOME/share/PLI/VCS/linux64
+export LD_LIBRARY_PATH=$VERDI_HOME/share/PLI/VCS/linux64:$LD_LIBRARY_PATH
 export PATH=$PATH:$VERDI_HOME/bin
+
+# ===== 系统库优先 =====
+# 确保 /usr/lib 和 /usr/lib64 在所有第三方库路径之前被搜索。
+# 这解决了 Xilinx Vivado 自带的旧版 libstdc++.so.6（缺少 GLIBCXX_3.4.30+）
+# 导致 xelatex / okular 等依赖新版 libstdc++ 的程序崩溃的问题。
+# Vivado 通过 vivado() 函数启动时仍会预置自己的库路径，不影响其运行。
+export LD_LIBRARY_PATH="/usr/lib:/usr/lib64:$LD_LIBRARY_PATH"
 
 # scl
 export SCL_HOME=$SYNOP_HOME/scl/2024.06
@@ -177,13 +186,31 @@ export PATH=/home/jiao/git/ciciec2026_loongson_preliminary/sdk/toolchains/loongs
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-# deepseek
-#export OPENAI_BASE_URL=https://api.deepseek.com
-export ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic
-export ANTHROPIC_API_KEY="sk-1adbc5ffb65b4c0a88b9fc6ca34d6592"
-export OPENAI_API_KEY="sk-1adbc5ffb65b4c0a88b9fc6ca34d6592"
 
-export DEEPSEEK_API_KEY="sk-1adbc5ffb65b4c0a88b9fc6ca34d6592"
+
+
+
+
+
+
+
+
+
+
+##########################################################
+# deepseek
+##########################################################
+#export OPENAI_BASE_URL="https://ai4xy.com/codex"
+export ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic
+# my
+#export ANTHROPIC_API_KEY=""
+
+# wza
+export ANTHROPIC_API_KEY=""
+
+#export OPENAI_API_KEY=""
+
+export DEEPSEEK_API_KEY=""
 export ANTHROPIC_MODEL=deepseek-v4-pro
 export ANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-v4-pro
 export ANTHROPIC_DEFAULT_SONNET_MODEL=deepseek-v4-pro
@@ -192,11 +219,6 @@ export ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-flash
 export CLAUDE_CODE_SUBAGENT_MODEL=deepseek-v4-flash
 export CLAUDE_CODE_EFFORT_LEVEL=max
 
-
-########################################################################
-########################################################################
-#export ANTHROPIC_AUTH_TOKEN='sk-nRbDpRKiELYD4h6vp1VkOHpsS6PhOKuWoagmSYDunTze5kUA'
-#export ANTHROPIC_BASE_URL='https://aimoniker.top'
 
 # coursier
 export  PATH="$PATH:$HOME/.local/share/coursier/bin"
@@ -212,3 +234,7 @@ alias torbrowser="./appimages/Browser/start-tor-browser"
 
 # Hermes Agent — ensure ~/.local/bin is on PATH
 export PATH="$HOME/.local/bin:$PATH"
+
+
+# Codex API 配置（base_url 在 ~/.codex/config.toml 中配置）
+export CODEX_API_KEY=""

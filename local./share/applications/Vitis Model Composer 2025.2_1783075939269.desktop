@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Vitis Model Composer 2025.2
+Comment=Vitis Model Composer 2025.2
+Icon=/home/jiao/xilinx/2025.2/Model_Composer/data/images/Compiler.png
+Exec=/home/jiao/xilinx/2025.2/Model_Composer/bin/model_composer 

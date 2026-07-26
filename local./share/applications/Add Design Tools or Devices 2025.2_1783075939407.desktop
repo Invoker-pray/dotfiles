@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Add Design Tools or Devices 2025.2
+Comment=Add Design Tools or Devices 2025.2
+Icon=/home/jiao/xilinx/.xinstall/2025.2/data/images/upgrade.png
+Exec=/home/jiao/xilinx/.xinstall/2025.2/xsetup 

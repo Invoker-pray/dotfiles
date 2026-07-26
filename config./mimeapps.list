@@ -22,3 +22,4 @@ application/x-wayland-gnome-saved-search=thunar.desktop
 x-scheme-handler/tonsite=org.telegram.desktop.desktop;org.telegram.desktop;
 x-scheme-handler/clash=clash-verge.desktop;clash-verge-handler.desktop;
 x-scheme-handler/clash-verge=clash-verge.desktop;clash-verge-handler.desktop;
+application/pdf=okularApplication_pdf.desktop;

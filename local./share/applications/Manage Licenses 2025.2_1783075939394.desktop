@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Manage Licenses 2025.2
+Comment=Manage Licenses 2025.2
+Icon=/home/jiao/xilinx/2025.2/Vivado/data/vlm/images/vlm_logo.png
+Exec=/home/jiao/xilinx/2025.2/Vivado/bin/vlm 

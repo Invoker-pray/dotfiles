@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Vitis 2025.2
+Comment=Vitis 2025.2
+Icon=/home/jiao/xilinx/2025.2/Vitis/doc/images/ide_icon.png
+Exec=/home/jiao/xilinx/2025.2/Vitis/bin/vitis 

@@ -5,6 +5,11 @@ The XKEYBOARD keymap compiler (xkbcomp) reports:
 >                   Using last definition for conflicting fields
 > Warning:          Symbol map for key <FK24> redefined
 >                   Using last definition for conflicting fields
+> Warning:          Could not resolve keysym XF86ElectronicPrivacyScreenOn
+> Warning:          Could not resolve keysym XF86ElectronicPrivacyScreenOff
+> Warning:          Could not resolve keysym XF86ActionOnSelection
+> Warning:          Could not resolve keysym XF86ContextualInsert
+> Warning:          Could not resolve keysym XF86ContextualQuery
 Errors from xkbcomp are not fatal to the X server
 The XKEYBOARD keymap compiler (xkbcomp) reports:
 > Warning:          Unsupported maximum keycode 709, clipping.
@@ -21,5 +26,9 @@ The XKEYBOARD keymap compiler (xkbcomp) reports:
 >                   Using last definition for conflicting fields
 > Warning:          Symbol map for key <FK24> redefined
 >                   Using last definition for conflicting fields
+> Warning:          Could not resolve keysym XF86ElectronicPrivacyScreenOn
+> Warning:          Could not resolve keysym XF86ElectronicPrivacyScreenOff
+> Warning:          Could not resolve keysym XF86ActionOnSelection
+> Warning:          Could not resolve keysym XF86ContextualInsert
+> Warning:          Could not resolve keysym XF86ContextualQuery
 Errors from xkbcomp are not fatal to the X server
-failed to read client connection (pid 4315)
