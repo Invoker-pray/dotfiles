@@ -30,6 +30,7 @@ cpio
 cuda
 cudnn
 darktable
+davinci-resolve
 diffstat
 dnsmasq
 docker
@@ -129,6 +130,7 @@ neovide
 neovim
 network-manager-applet
 networkmanager
+nginx
 nikto
 ninja
 nix
@@ -142,6 +144,7 @@ nvidia-settings
 nvtop
 nwg-displays
 nwg-look
+nyx
 obs-studio
 okular
 ollama
