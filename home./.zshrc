@@ -92,6 +92,18 @@ vitis()   { LD_LIBRARY_PATH="${__vivado_lib_path}:${LD_LIBRARY_PATH}" /home/jiao
 alias zzz="loginctl lock-session"
 
 
+zzzz() {
+  loginctl lock-session
+  local i
+  for i in 1 2 3 4 5; do
+    sleep 1
+    hyprctl dispatch dpms off >/dev/null
+    sleep 0.6
+    hyprctl monitors | grep -q "dpmsStatus: 0" && return 0
+  done
+}
+
+
 
 ## rust analyzer
 
@@ -197,27 +209,28 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 
 
+########################################################## 
+# deepseek 
 ##########################################################
-# deepseek
-##########################################################
-#export OPENAI_BASE_URL="https://ai4xy.com/codex"
 export ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic
-# my
-#export ANTHROPIC_API_KEY=""
-
-# wza
 export ANTHROPIC_API_KEY=""
-
-#export OPENAI_API_KEY=""
-
 export DEEPSEEK_API_KEY=""
+
 export ANTHROPIC_MODEL=deepseek-v4-pro
 export ANTHROPIC_DEFAULT_OPUS_MODEL=deepseek-v4-pro
 export ANTHROPIC_DEFAULT_SONNET_MODEL=deepseek-v4-pro
 export ANTHROPIC_DEFAULT_HAIKU_MODEL=deepseek-v4-flash
-
 export CLAUDE_CODE_SUBAGENT_MODEL=deepseek-v4-flash
 export CLAUDE_CODE_EFFORT_LEVEL=max
+
+
+############################################################
+##  glm
+############################################################
+#export ANTHROPIC_DEFAULT_OPUS_MODEL=GLM-5.3-Flash
+#export ANTHROPIC_DEFAULT_SONNET_MODEL=GLM-5.3-Flash
+#export ANTHROPIC_DEFAULT_HAIKU_MODEL=GLM-5.3-Flash
+
 
 
 # coursier
@@ -238,3 +251,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Codex API 配置（base_url 在 ~/.codex/config.toml 中配置）
 export CODEX_API_KEY=""
+
+
+# binance api 
+# export NODE_OPTIONS="--require $HOME/.node-proxy-shim/shim.cjs"

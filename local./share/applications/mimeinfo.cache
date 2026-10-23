@@ -1,3 +1,6 @@
 [MIME Cache]
-x-scheme-handler/clash=clash-verge-handler.desktop;
+x-scheme-handler/clash=clash-verge-handler.desktop;flclash-url-handler.desktop;
 x-scheme-handler/clash-verge=clash-verge-handler.desktop;
+x-scheme-handler/clashmeta=flclash-url-handler.desktop;
+x-scheme-handler/claude-cli=claude-code-url-handler.desktop;
+x-scheme-handler/flclash=flclash-url-handler.desktop;

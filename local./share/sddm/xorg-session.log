@@ -1,0 +1,158 @@
+Gtk-Message: 19:36:43.975: Failed to load module "colorreload-gtk-module"
+libxfce4windowing-Message: 19:36:44.163: Failed to fetch _NET_NUMBER_OF_DESKTOPS; assuming 1
+libxfce4windowing-Message: 19:36:44.163: Failed to get _NET_WORKAREA; using full screen dimensions
+libxfce4windowing-Message: 19:36:44.164: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
+libxfce4windowing-Message: 19:36:44.164: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
+/usr/bin/iceauth:  creating new authority file /run/user/1000/ICEauthority
+gpg-agent: a gpg-agent is already running - not starting a new one
+Gtk-Message: 19:36:44.378: Failed to load module "colorreload-gtk-module"
+libxfce4windowing-Message: 19:36:44.509: Failed to fetch _NET_CURRENT_DESKTOP; assuming 0
+
+(xfwm4:2231): xfwm4-WARNING **: 19:36:44.556: Unsupported GL renderer (llvmpipe (LLVM 23.1.1, 256 bits)).
+Gtk-Message: 19:36:44.594: Failed to load module "colorreload-gtk-module"
+Gtk-Message: 19:36:44.715: Failed to load module "colorreload-gtk-module"
+Gtk-Message: 19:36:44.761: Failed to load module "colorreload-gtk-module"
+Gtk-Message: 19:36:44.809: Failed to load module "colorreload-gtk-module"
+2026/10/10 19:36:45 socat[2464] W address is opened in read-write mode but only supports read-only
+vmware-user: could not open /proc/fs/vmblock/dev
+Gtk-Message: 19:36:45.067: Failed to load module "colorreload-gtk-module"
+I2026-10-10 19:36:45.064658 instance.cpp:669] Starting fcitx5 5.1.23
+Gtk-Message: 19:36:45.071: Failed to load module "colorreload-gtk-module"
+I2026-10-10 19:36:45.072885 instance.cpp:1448] Override Enabled Addons: {}
+I2026-10-10 19:36:45.072904 instance.cpp:1449] Override Disabled Addons: {}
+Gtk-Message: 19:36:45.084: Failed to load module "colorreload-gtk-module"
+Gtk-Message: 19:36:45.088: Failed to load module "colorreload-gtk-module"
+Gtk-Message: 19:36:45.098: Failed to load module "colorreload-gtk-module"
+
+(xfce4-power-manager:2521): libnotify-WARNING **: 19:36:45.154: Failed to connect to proxy
+E2026-10-10 19:36:45.155149 waylandmodule.cpp:266] Failed to open wayland connection
+I2026-10-10 19:36:45.155186 addonmanager.cpp:208] Loaded addon wayland
+I2026-10-10 19:36:45.156781 addonmanager.cpp:208] Loaded addon imselector
+I2026-10-10 19:36:45.161098 xcbconnection.cpp:198] Connecting to X11 display, display name::0.0.
+I2026-10-10 19:36:45.161280 addonmanager.cpp:208] Loaded addon xcb
+Gtk-Message: 19:36:45.162: Failed to load module "colorreload-gtk-module"
+I2026-10-10 19:36:45.332192 addonmanager.cpp:208] Loaded addon quickphrase
+I2026-10-10 19:36:45.334456 addonmanager.cpp:208] Loaded addon waylandim
+I2026-10-10 19:36:45.334962 keyboard.cpp:229] Attempting to load keyboard from: ["/usr/share/xkeyboard-config-2"] Rule: evdev
+I2026-10-10 19:36:45.398244 addonmanager.cpp:208] Loaded addon keyboard
+I2026-10-10 19:36:45.402585 addonmanager.cpp:208] Loaded addon clipboard
+I2026-10-10 19:36:45.404766 addonmanager.cpp:208] Loaded addon unicode
+I2026-10-10 19:36:45.410883 addonmanager.cpp:208] Loaded addon dbus
+I2026-10-10 19:36:45.412706 addonmanager.cpp:208] Loaded addon dbusfrontend
+I2026-10-10 19:36:45.592087 addonmanager.cpp:208] Loaded addon fcitx4frontend
+I2026-10-10 19:36:45.598457 addonmanager.cpp:208] Loaded addon ibusfrontend
+I2026-10-10 19:36:45.605050 addonmanager.cpp:208] Loaded addon xim
+I2026-10-10 19:36:45.640203 inputmethodmanager.cpp:213] Found 753 input method(s) in addon keyboard
+I2026-10-10 19:36:45.663518 addonmanager.cpp:208] Loaded addon kimpanel
+I2026-10-10 19:36:45.664359 addonmanager.cpp:208] Loaded addon virtualkeyboard
+
+** (xfpm-power-backlight-helper:2867): WARNING **: 19:36:45.700: failed to get enabled state: Failed to open file “/sys/class/backlight/nvidia_0/device/enabled”: No such file or directory
+
+** (xfpm-power-backlight-helper:2875): WARNING **: 19:36:45.716: failed to get enabled state: Failed to open file “/sys/class/backlight/nvidia_0/device/enabled”: No such file or directory
+I2026-10-10 19:36:45.745573 classicui.cpp:89] Created classicui for x11 display::0.0
+I2026-10-10 19:36:45.745607 addonmanager.cpp:208] Loaded addon classicui
+I2026-10-10 19:36:45.746970 addonmanager.cpp:208] Loaded addon notificationitem
+I2026-10-10 19:36:45.748278 addonmanager.cpp:208] Loaded addon notifications
+I2026-10-10 19:36:45.750893 dbusmodule.cpp:844] Service name change: org.fcitx.Fcitx5  :1.43
+I2026-10-10 19:36:45.751009 kimpanel.cpp:138] Kimpanel new owner: 
+I2026-10-10 19:36:45.751040 virtualkeyboard.cpp:230] VirtualKeyboard new owner: 
+I2026-10-10 19:36:45.751071 portalsettingmonitor.cpp:97] A new portal show up, start a new query.
+SLF4J(I): Connected with provider of type [ch.qos.logback.classic.spi.LogbackServiceProvider]
+Gtk-Message: 19:36:45.873: Failed to load module "colorreload-gtk-module"
+blueman-applet 19.36.46 WARNING  PluginManager:153 __load_plugin: Not loading PPPSupport because its conflict has higher priority
+blueman-applet 19.36.46 WARNING  PluginManager:153 __load_plugin: Not loading DhcpClient because its conflict has higher priority
+Gtk-Message: 19:36:46.159: Failed to load module "colorreload-gtk-module"
+I2026-10-10 19:36:47.079446 addonmanager.cpp:208] Loaded addon rime
+Gtk-Message: 19:36:48.592: Failed to load module "colorreload-gtk-module"
+Gtk-Message: 19:36:48.622: Failed to load module "colorreload-gtk-module"
+[0.201] Failed to enable transparency. This happens when your desktop environment does not support compositing.
+Gtk-Message: 19:36:52.090: Failed to load module "canberra-gtk-module"
+Gtk-Message: 19:36:52.090: Failed to load module "canberra-gtk-module"
+[20.634] [PARSE ERROR] Unsupported screen mode:  1007 (private)
+Gtk-Message: 19:37:29.040: Failed to load module "colorreload-gtk-module"
+Gtk-Message: 19:37:29.079: Failed to load module "colorreload-gtk-module"
+[0.130] Failed to enable transparency. This happens when your desktop environment does not support compositing.
+Gtk-Message: 19:38:04.565: Failed to load module "colorreload-gtk-module"
+Gtk-Message: 19:38:04.619: Failed to load module "colorreload-gtk-module"
+[0.138] Failed to enable transparency. This happens when your desktop environment does not support compositing.
+Gtk-Message: 19:40:45.984: Failed to load module "colorreload-gtk-module"
+Gtk-Message: 19:40:46.022: Failed to load module "colorreload-gtk-module"
+[0.135] Failed to enable transparency. This happens when your desktop environment does not support compositing.
+Gtk-Message: 19:43:13.012: Failed to load module "colorreload-gtk-module"
+Gtk-Message: 19:43:13.047: Failed to load module "colorreload-gtk-module"
+[0.123] Failed to enable transparency. This happens when your desktop environment does not support compositing.
+Gtk-Message: 19:46:44.238: Failed to load module "colorreload-gtk-module"
+Gtk-Message: 19:46:44.274: Failed to load module "colorreload-gtk-module"
+[0.158] Failed to enable transparency. This happens when your desktop environment does not support compositing.
+=========================
+Fcitx 5.1.23 -- Get Signal No.: 15
+Date: try "date -d @1791632806" if you are using GNU date ***
+ProcessID: 2491
+/usr/bin/fcitx5(+0x13b91) [0x55bff5fbcb91]
+/usr/lib/libc.so.6(+0x3e6f0) [0x7fa1bd83e6f0]
+/usr/lib/libc.so.6(+0xa08f2) [0x7fa1bd8a08f2]
+/usr/lib/libc.so.6(epoll_wait+0x5b) [0x7fa1bd920bcb]
+/usr/lib/libsystemd.so.0(sd_event_wait+0x1f2) [0x7fa1bdafe662]
+/usr/lib/libsystemd.so.0(sd_event_run+0x2cc) [0x7fa1bdaffb9c]
+/usr/lib/libsystemd.so.0(sd_event_loop+0x90) [0x7fa1bdafff40]
+/usr/lib/libFcitx5Utils.so.2(_ZN5fcitx9EventLoop4execEv+0x2c) [0x7fa1be12eefc]
+/usr/lib/libFcitx5Core.so.7(_ZN5fcitx8Instance4execEv+0x5e) [0x7fa1be1ff74e]
+/usr/bin/fcitx5(+0x11aa8) [0x55bff5fbaaa8]
+/usr/lib/libc.so.6(+0x27781) [0x7fa1bd827781]
+/usr/lib/libc.so.6(__libc_start_main+0x89) [0x7fa1bd8278b9]
+/usr/bin/fcitx5(+0x12e95) [0x55bff5fbbe95]
+=========================
+Fcitx 5.1.23 -- Get Signal No.: 1
+Date: try "date -d @1791632806" if you are using GNU date ***
+ProcessID: 2491
+/usr/bin/fcitx5(+0x13b91) [0x55bff5fbcb91]
+/usr/lib/libc.so.6(+0x3e6f0) [0x7fa1bd83e6f0]
+/usr/lib/libc.so.6(+0xa08f2) [0x7fa1bd8a08f2]
+/usr/lib/libc.so.6(poll+0x55) [0x7fa1bd9112e5]
+/usr/lib/libxcb.so.1(+0xd20b) [0x7fa1bd50620b]
+/usr/lib/libxcb.so.1(+0xd910) [0x7fa1bd506910]
+/usr/lib/libxcb.so.1(xcb_wait_for_reply+0x66) [0x7fa1bd507b46]
+/usr/lib/libxcb-imdkit.so.1(xcb_im_close_im+0x4d) [0x7fa1bc264ccd]
+/usr/lib/fcitx5/libxim.so(+0x9254) [0x7fa1bc2ea254]
+/usr/lib/fcitx5/libxcb.so(+0x11eaf) [0x7fa1bda39eaf]
+/usr/lib/fcitx5/libxcb.so(+0x123a0) [0x7fa1bda3a3a0]
+/usr/lib/libFcitx5Core.so.7(+0x51b04) [0x7fa1be202b04]
+/usr/lib/libFcitx5Core.so.7(+0x60b6e) [0x7fa1be211b6e]
+/usr/lib/libFcitx5Utils.so.2(+0x48f45) [0x7fa1be10df45]
+/usr/lib/libsystemd.so.0(+0x4428e) [0x7fa1bdafb28e]
+/usr/lib/libsystemd.so.0(sd_event_dispatch+0x262) [0x7fa1bdaff802]
+/usr/lib/libsystemd.so.0(sd_event_run+0x289) [0x7fa1bdaffb59]
+/usr/lib/libsystemd.so.0(sd_event_loop+0x90) [0x7fa1bdafff40]
+/usr/lib/libFcitx5Utils.so.2(_ZN5fcitx9EventLoop4execEv+0x2c) [0x7fa1be12eefc]
+/usr/lib/libFcitx5Core.so.7(_ZN5fcitx8Instance4execEv+0x5e) [0x7fa1be1ff74e]
+/usr/bin/fcitx5(+0x11aa8) [0x55bff5fbaaa8]
+/usr/lib/libc.so.6(+0x27781) [0x7fa1bd827781]
+/usr/lib/libc.so.6(__libc_start_main+0x89) [0x7fa1bd8278b9]
+/usr/bin/fcitx5(+0x12e95) [0x55bff5fbbe95]
+W2026-10-10 19:46:46.618430 xcbeventreader.cpp:60] XCB connection ":0.0" got error: 1
+I2026-10-10 19:46:46.618597 xcbmodule.cpp:100] Disconnected from X11 Display :0.0
+I2026-10-10 19:46:46.618625 instance.cpp:1498] Save before exiting...
+X connection to :0.0 broken (explicit kill or server shutdown).
+X connection to :0.0 broken (explicit kill or server shutdown).
+I2026-10-10 19:46:46.634895 addonmanager.cpp:312] Unloading addon rime
+E20261010 19:46:46.898312 140332497483456 level_db.cc:273] Error opening db '.temp' read-only.
+E20261010 19:46:46.898325 140332497483456 user_dict_manager.cc:204] error backing up user dict '.temp'.
+E20261010 19:46:46.898330 140332497483456 user_dict_manager.cc:220] failed synchronizing 1/2 user dicts.
+I2026-10-10 19:46:46.900111 addonmanager.cpp:312] Unloading addon notifications
+I2026-10-10 19:46:46.900162 addonmanager.cpp:312] Unloading addon notificationitem
+I2026-10-10 19:46:46.900217 addonmanager.cpp:312] Unloading addon classicui
+I2026-10-10 19:46:46.900614 addonmanager.cpp:312] Unloading addon virtualkeyboard
+I2026-10-10 19:46:46.900636 addonmanager.cpp:312] Unloading addon kimpanel
+I2026-10-10 19:46:46.900649 addonmanager.cpp:312] Unloading addon xim
+I2026-10-10 19:46:46.900661 addonmanager.cpp:312] Unloading addon ibusfrontend
+I2026-10-10 19:46:46.912589 addonmanager.cpp:312] Unloading addon fcitx4frontend
+I2026-10-10 19:46:46.912811 addonmanager.cpp:312] Unloading addon dbusfrontend
+I2026-10-10 19:46:46.912851 addonmanager.cpp:312] Unloading addon dbus
+I2026-10-10 19:46:46.912897 addonmanager.cpp:312] Unloading addon unicode
+I2026-10-10 19:46:46.912914 addonmanager.cpp:312] Unloading addon clipboard
+I2026-10-10 19:46:46.912935 addonmanager.cpp:312] Unloading addon keyboard
+I2026-10-10 19:46:46.913049 addonmanager.cpp:312] Unloading addon waylandim
+I2026-10-10 19:46:46.913062 addonmanager.cpp:312] Unloading addon quickphrase
+I2026-10-10 19:46:46.913234 addonmanager.cpp:312] Unloading addon xcb
+I2026-10-10 19:46:46.913247 addonmanager.cpp:312] Unloading addon imselector
+I2026-10-10 19:46:46.913259 addonmanager.cpp:312] Unloading addon wayland

@@ -4,6 +4,8 @@ adobe-source-code-pro-fonts
 adobe-source-han-serif-cn-fonts
 aircrack-ng
 amd-ucode
+android-sdk-cmdline-tools-latest
+android-sdk-platform-tools
 archinstall
 archiso
 arm-none-eabi-binutils
@@ -16,6 +18,7 @@ base-devel
 bc
 biber
 bind
+bitcoin-daemon
 blueman
 bluez-utils
 brightnessctl
@@ -52,6 +55,7 @@ ffmpegthumbs
 firefox
 firejail
 flclash-bin
+flutter-bin
 fzf
 garcon
 ghostwriter
@@ -165,6 +169,7 @@ playerctl
 pokemon-colorscripts-git
 power-profiles-daemon
 poxml
+proxychains-ng
 putty
 pv
 python-pip
@@ -237,6 +242,8 @@ wev
 wget
 wireshark-qt
 wlogout
+wpebackend-fdo
+wpewebkit
 xarchiver
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
@@ -302,6 +309,7 @@ yosys
 zaproxy
 zathura
 zathura-pdf-mupdf
+zcode
 zip
 zsh
 zsh-completions
